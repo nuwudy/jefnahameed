@@ -173,7 +173,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="text-center max-w-3xl mx-auto mb-10">
             <span class="badge-rose mb-3">🌹 Live Interactive Masterclass</span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#54321A] tracking-tight">
                 "How to Heal Toxic Relationships"
@@ -181,6 +181,29 @@
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
                 A structured guidance masterclass specifically curated for women and couples to recognize unhealthy friction, establish unshakeable boundaries, and heal with confidence.
             </p>
+        </div>
+
+        <!-- Masterclass Video Feature Card -->
+        <div class="max-w-3xl mx-auto mb-12">
+            <div class="relative rounded-3xl bg-[#FCFAF7] border-2 border-[#DFB254]/40 p-2.5 sm:p-3 shadow-xl overflow-hidden ambient-warm-glow">
+                <div class="relative aspect-video rounded-2xl overflow-hidden bg-stone-900 shadow-inner">
+                    <video controls
+                           playsinline
+                           preload="metadata"
+                           poster="{{ asset('images/gallery/loving-family-home.webp') }}"
+                           class="w-full h-full object-cover">
+                        <source src="https://jefnahameed.com/storage/media/KEPOXo48Wg7hLqhmE0biDVcPfmBLVnoyNBeUEI1Y.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="px-3 pt-2.5 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-stone-600">
+                    <span class="font-medium flex items-center gap-1.5 text-[#54321A]">
+                        <span class="text-rose-500">🎬</span>
+                        <span>Watch: <strong>Insights from Jefna Hameed on Family &amp; Relationship Harmony</strong></span>
+                    </span>
+                    <span class="text-[#8B3846] font-semibold">സ്നേഹം മനസ്സിലാക്കുമ്പോൾ 🌹</span>
+                </div>
+            </div>
         </div>
 
         <!-- Featured Card Container -->
