@@ -54,8 +54,8 @@
         [
           '@type' => 'Course',
           '@id' => url('/') . '/#workshop',
-          'name' => 'Avoid Toxic Relationships: Masterclass for Women',
-          'description' => 'A practical relationship masterclass for women to identify red flags, establish healthy boundaries, and heal from toxic dynamics.',
+          'name' => 'How to Heal Toxic Relationships: Masterclass for Women & Couples',
+          'description' => 'A practical relationship masterclass to identify unhealthy patterns, establish healthy boundaries, and heal from toxic dynamics.',
           'provider' => [
             '@type' => 'Person',
             'name' => 'Jefna Hameed',

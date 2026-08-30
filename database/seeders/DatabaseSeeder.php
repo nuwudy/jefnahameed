@@ -26,14 +26,14 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 1. Featured Masterclass: "Avoid Toxic Relationships"
+        // 1. Featured Masterclass: "How to Heal Toxic Relationships"
         Workshop::updateOrCreate(
-            ['slug' => 'avoid-toxic-relationships'],
+            ['slug' => 'how-to-heal-toxic-relationships'],
             [
-                'title' => 'Avoid Toxic Relationships',
-                'subtitle' => 'A Practical, Psychological Masterclass for Women to Recognize Red Flags, Break Cycles & Heal',
+                'title' => 'How to Heal Toxic Relationships',
+                'subtitle' => 'A Practical Masterclass to Recognize Red Flags, Break Toxic Cycles & Heal with Confidence',
                 'badge' => 'Live Interactive Masterclass',
-                'description' => 'A step-by-step guidance workshop designed to help women recognize manipulation, set unwavering personal boundaries, recover their self-worth, and foster emotionally safe relationships.',
+                'description' => 'A step-by-step guidance workshop designed to help recognize unhealthy dynamics, set unwavering personal boundaries, recover self-worth, and foster emotionally safe relationships.',
                 'curriculum' => [
                     [
                         'title' => 'Identifying Toxic Patterns & Subtle Red Flags',
@@ -226,7 +226,7 @@ class DatabaseSeeder extends Seeder
         $testimonials = [
             [
                 'client_name' => 'Fathima S.',
-                'client_tag' => 'Workshop Participant — Avoid Toxic Relationships',
+                'client_tag' => 'Workshop Participant — How to Heal Toxic Relationships',
                 'location' => 'Kochi / Online',
                 'rating' => 5,
                 'quote' => 'Jefna’s workshop opened my eyes to patterns I had normalized for years. Her empathetic, practical breakdown of gaslighting and emotional boundaries gave me the courage to choose my peace first.',

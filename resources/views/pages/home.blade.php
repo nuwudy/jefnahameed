@@ -20,7 +20,7 @@
                 <!-- Group 1 -->
                 <span class="inline-flex items-center gap-2">
                     <span class="text-[#8B3846]">🌹</span>
-                    <span>Upcoming Masterclass: <strong>Avoid Toxic Relationships</strong></span>
+                    <span>Upcoming Masterclass: <strong>How to Heal Toxic Relationships</strong></span>
                     <a href="#workshops" class="font-bold underline text-[#8B3846] hover:text-[#6C2430]">Reserve Seat →</a>
                 </span>
                 <span class="text-[#C29336]">✦</span>
@@ -49,7 +49,7 @@
                 <!-- Group 2 (Duplicate for Seamless Continuous Loop) -->
                 <span class="inline-flex items-center gap-2">
                     <span class="text-[#8B3846]">🌹</span>
-                    <span>Upcoming Masterclass: <strong>Avoid Toxic Relationships</strong></span>
+                    <span>Upcoming Masterclass: <strong>How to Heal Toxic Relationships</strong></span>
                     <a href="#workshops" class="font-bold underline text-[#8B3846] hover:text-[#6C2430]">Reserve Seat →</a>
                 </span>
                 <span class="text-[#C29336]">✦</span>
@@ -176,10 +176,10 @@
         <div class="text-center max-w-3xl mx-auto mb-14">
             <span class="badge-rose mb-3">🌹 Live Interactive Masterclass</span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#54321A] tracking-tight">
-                "Avoid Toxic Relationships"
+                "How to Heal Toxic Relationships"
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
-                A structured guidance masterclass specifically curated for women to recognize subtle emotional manipulation, establish unshakeable boundaries, and heal with confidence.
+                A structured guidance masterclass specifically curated for women and couples to recognize unhealthy friction, establish unshakeable boundaries, and heal with confidence.
             </p>
         </div>
 
@@ -767,7 +767,7 @@
             <!-- FAQ 5 -->
             <div class="bg-white border border-[#E8DFD3] rounded-2xl overflow-hidden shadow-sm">
                 <button type="button" @click="active = (active === 5 ? null : 5)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-[#54321A] hover:text-[#C29336] transition">
-                    <span>Can I attend the "Avoid Toxic Relationships" masterclass anonymously?</span>
+                    <span>Can I attend the "How to Heal Toxic Relationships" masterclass anonymously?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 5 ? '−' : '+'">+</span>
                 </button>
                 <div x-show="active === 5" x-collapse class="px-5 pb-5 text-xs text-stone-600 leading-relaxed border-t border-stone-100 pt-3" style="display: none;">
