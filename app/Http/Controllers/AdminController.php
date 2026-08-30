@@ -12,7 +12,7 @@ use Illuminate\View\View;
 
 class AdminController extends Controller
 {
-    public function login(): View
+    public function login()
     {
         if (Auth::check()) {
             return redirect()->route('admin.dashboard');
