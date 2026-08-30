@@ -139,12 +139,35 @@
                                 <option value="Moments & Talks">Moments & Talks</option>
                             </select>
                         </div>
-
+                        
                         <!-- If Image File Upload -->
-                        @if($type === 'image' || $type === 'video')
-                            <div>
-                                <label class="block text-xs font-semibold text-stone-700 mb-1">Select File {{ $type === 'image' ? '(JPG, PNG, WebP)' : '(MP4, WebM)' }}</label>
-                                <input type="file" wire:model="file" class="w-full text-xs text-stone-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-[#EEF3ED] file:text-[#3B4E3B] hover:file:bg-[#3B4E3B] hover:file:text-white file:transition">
+                        @if($type === 'image')
+                            <div class="p-4 bg-white rounded-2xl border border-stone-200 space-y-2">
+                                <label class="block text-xs font-bold text-stone-800">
+                                    📷 Select Photo / Image <span class="text-rose-500">*</span>
+                                    <span class="text-[10px] text-stone-500 font-normal block">Supports JPG, PNG, WebP (up to 20MB)</span>
+                                </label>
+                                <input type="file" wire:model="file" accept="image/*" class="w-full text-xs text-stone-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-[#FAF2DE] file:text-[#54321A] hover:file:bg-[#54321A] hover:file:text-white file:transition">
+                                <div wire:loading wire:target="file" class="text-xs text-[#8B3846] font-medium animate-pulse flex items-center gap-1.5 pt-1">
+                                    <span>⏳ Uploading photo, please wait...</span>
+                                </div>
+                                @error('file') <span class="text-rose-600 text-xs mt-1 block">{{ $message }}</span> @enderror
+                            </div>
+                        @endif
+
+                        <!-- If Direct MP4/WebM Video Upload -->
+                        @if($type === 'video')
+                            <div class="p-4 bg-white rounded-2xl border-2 border-dashed border-[#54321A]/30 space-y-3">
+                                <label class="block text-xs font-bold text-stone-800">
+                                    📁 Select Video File (MP4, WebM, MOV) <span class="text-rose-500">*</span>
+                                    <span class="text-[10px] text-stone-500 font-normal block">Supports large video files up to 512MB</span>
+                                </label>
+                                <input type="file" wire:model="file" accept="video/mp4,video/webm,video/quicktime,video/*" class="w-full text-xs text-stone-600 file:mr-3 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#54321A] file:text-[#FAF6F0] hover:file:bg-[#3B2110] file:transition cursor-pointer">
+                                
+                                <div wire:loading wire:target="file" class="p-3 bg-[#FAF2DE] rounded-xl text-xs text-[#54321A] font-semibold flex items-center gap-2 border border-[#DFB254]/40">
+                                    <span class="animate-spin inline-block">⏳</span>
+                                    <span>Uploading video to server... Please keep this window open until complete.</span>
+                                </div>
                                 @error('file') <span class="text-rose-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                             </div>
                         @endif
@@ -152,17 +175,23 @@
                         <!-- If Embed Link -->
                         @if($type === 'embed')
                             <div>
-                                <label class="block text-xs font-semibold text-stone-700 mb-1">Video Embed URL (YouTube / Video URL) *</label>
-                                <input type="url" wire:model="embed_url" placeholder="https://www.youtube.com/watch?v=..." class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:ring-2 focus:ring-[#3B4E3B]">
+                                <label class="block text-xs font-semibold text-stone-700 mb-1">YouTube / Video Embed URL *</label>
+                                <input type="url" wire:model="embed_url" placeholder="https://www.youtube.com/watch?v=..." class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:ring-2 focus:ring-[#54321A]">
                                 @error('embed_url') <span class="text-rose-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                             </div>
                         @endif
 
-                        <!-- Optional Thumbnail -->
+                        <!-- Optional Poster Thumbnail for Video / Embed -->
                         @if($type !== 'image')
-                            <div>
-                                <label class="block text-xs font-semibold text-stone-700 mb-1">Video Thumbnail Image (Optional)</label>
-                                <input type="file" wire:model="thumbnail" class="w-full text-xs text-stone-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-[#EEF3ED] file:text-[#3B4E3B]">
+                            <div class="p-3.5 bg-stone-50 rounded-2xl border border-stone-200 space-y-1.5">
+                                <label class="block text-xs font-semibold text-stone-700">
+                                    🖼️ Custom Video Poster Image (Optional)
+                                    <span class="text-[10px] text-stone-500 font-normal block">JPG, PNG, or WebP cover image to show before video plays.</span>
+                                </label>
+                                <input type="file" wire:model="thumbnail" accept="image/*" class="w-full text-xs text-stone-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-stone-200 file:text-stone-700">
+                                <div wire:loading wire:target="thumbnail" class="text-xs text-stone-500 pt-1">
+                                    <span>Uploading thumbnail...</span>
+                                </div>
                                 @error('thumbnail') <span class="text-rose-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                             </div>
                         @endif
@@ -170,28 +199,31 @@
                         <!-- Caption / Description -->
                         <div>
                             <label class="block text-xs font-semibold text-stone-700 mb-1">Caption / Description (Optional)</label>
-                            <textarea wire:model="caption" rows="2" placeholder="Brief description or takeaway..." class="w-full px-4 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:ring-2 focus:ring-[#3B4E3B]"></textarea>
+                            <textarea wire:model="caption" rows="2" placeholder="Brief description or takeaway..." class="w-full px-4 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:ring-2 focus:ring-[#54321A]"></textarea>
                         </div>
 
                         <!-- Visibility / Featured -->
                         <div class="flex items-center gap-6 pt-2">
                             <label class="flex items-center gap-2 text-xs font-medium text-stone-700 cursor-pointer">
-                                <input type="checkbox" wire:model="is_public" class="rounded text-[#3B4E3B] focus:ring-[#3B4E3B]">
+                                <input type="checkbox" wire:model="is_public" class="rounded text-[#54321A] focus:ring-[#54321A]">
                                 <span>Publicly Visible</span>
                             </label>
                             <label class="flex items-center gap-2 text-xs font-medium text-stone-700 cursor-pointer">
-                                <input type="checkbox" wire:model="is_featured" class="rounded text-[#3B4E3B] focus:ring-[#3B4E3B]">
+                                <input type="checkbox" wire:model="is_featured" class="rounded text-[#54321A] focus:ring-[#54321A]">
                                 <span>Feature on Home Page</span>
                             </label>
                         </div>
 
-                        <div class="pt-4 border-t border-stone-200 flex items-center justify-end gap-3">
-                            <button type="button" wire:click="closeModal" class="px-4 py-2 text-xs font-medium text-stone-600 hover:text-stone-900">
+                        <div class="pt-4 flex items-center justify-end gap-3 border-t border-stone-200">
+                            <button type="button" wire:click="closeModal" class="px-4 py-2.5 text-stone-600 hover:text-stone-900 text-xs font-semibold">
                                 Cancel
                             </button>
-                            <button type="submit" wire:loading.attr="disabled" class="px-6 py-2.5 bg-[#3B4E3B] hover:bg-[#2A382A] text-white text-xs font-semibold rounded-xl transition shadow-sm">
-                                <span wire:loading.remove>{{ $editingId ? 'Save Changes' : 'Upload to Library' }}</span>
-                                <span wire:loading>Saving...</span>
+                            <button type="submit"
+                                    wire:loading.attr="disabled"
+                                    wire:target="file, thumbnail, save"
+                                    class="px-6 py-2.5 bg-[#54321A] hover:bg-[#3B2110] disabled:opacity-50 text-[#FAF6F0] rounded-xl text-xs font-semibold shadow-md transition flex items-center gap-2 cursor-pointer">
+                                <span wire:loading.remove wire:target="file, thumbnail, save">{{ $editingId ? 'Update Item' : 'Upload to Library' }}</span>
+                                <span wire:loading wire:target="file, thumbnail, save">Uploading &amp; Saving...</span>
                             </button>
                         </div>
                     </form>

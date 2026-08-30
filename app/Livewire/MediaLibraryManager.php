@@ -29,12 +29,19 @@ class MediaLibraryManager extends Component
 
     protected function rules(): array
     {
+        $fileRules = 'nullable';
+        if ($this->type === 'image') {
+            $fileRules = $this->editingId ? 'nullable|image|max:20480' : 'required|image|max:20480';
+        } elseif ($this->type === 'video') {
+            $fileRules = $this->editingId ? 'nullable|file|mimes:mp4,webm,mov,m4v,avi,mkv|max:524288' : 'required|file|mimes:mp4,webm,mov,m4v,avi,mkv|max:524288';
+        }
+
         return [
             'title' => 'required|min:3|max:200',
             'type' => 'required|in:image,video,embed',
             'category' => 'required|string|max:100',
-            'file' => $this->type === 'image' && !$this->editingId ? 'nullable|image|max:10240' : 'nullable|file|max:51200',
-            'thumbnail' => 'nullable|image|max:5120',
+            'file' => $fileRules,
+            'thumbnail' => 'nullable|image|mimes:jpeg,png,jpg,webp,gif|max:20480',
             'embed_url' => $this->type === 'embed' ? 'required|url|max:500' : 'nullable|max:500',
             'caption' => 'nullable|string|max:1000',
             'duration' => 'nullable|string|max:20',
