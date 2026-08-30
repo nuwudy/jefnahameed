@@ -52,6 +52,10 @@ class MediaItem extends Model
             return asset('storage/' . $this->thumbnail_path);
         }
 
+        if ($this->type === 'video') {
+            return asset('images/gallery/luxury-resort-connection.webp');
+        }
+
         return $this->display_url;
     }
 

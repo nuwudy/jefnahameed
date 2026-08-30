@@ -46,14 +46,24 @@
             @foreach($items as $item)
                 <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
                     <!-- Media Preview Area -->
-                    <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                        <img src="{{ $item->display_thumbnail }}" alt="{{ $item->title }}" class="w-full h-full object-cover">
-                        <div class="absolute top-2.5 left-2.5">
-                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider {{ $item->type === 'image' ? 'bg-stone-900/80 text-white' : 'bg-[#7A3528] text-white' }}">
+                    <div class="relative aspect-[4/3] bg-stone-900 overflow-hidden">
+                        @if($item->type === 'video' && !$item->thumbnail_path)
+                            <video src="{{ $item->display_url }}#t=0.5" preload="metadata" muted playsinline class="w-full h-full object-cover"></video>
+                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center pointer-events-none">
+                                <span class="w-10 h-10 rounded-full bg-white/30 backdrop-blur-xs text-white flex items-center justify-center text-sm shadow-md">
+                                    ▶
+                                </span>
+                            </div>
+                        @else
+                            <img src="{{ $item->display_thumbnail }}" alt="{{ $item->title }}" class="w-full h-full object-cover">
+                        @endif
+
+                        <div class="absolute top-2.5 left-2.5 z-10">
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider {{ $item->type === 'image' ? 'bg-stone-900/80 text-white' : 'bg-[#54321A] text-[#FAF6F0] border border-[#DFB254]/40' }}">
                                 {{ $item->type }}
                             </span>
                         </div>
-                        <div class="absolute top-2.5 right-2.5">
+                        <div class="absolute top-2.5 right-2.5 z-10">
                             <button type="button" wire:click="togglePublic({{ $item->id }})" class="px-2 py-0.5 rounded-full text-[10px] font-bold {{ $item->is_public ? 'bg-emerald-600 text-white' : 'bg-stone-500 text-white' }}">
                                 {{ $item->is_public ? 'Public' : 'Hidden' }}
                             </button>
