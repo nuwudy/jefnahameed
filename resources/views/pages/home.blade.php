@@ -596,45 +596,93 @@
             </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Item 1 -->
-            <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
-                <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/gallery/family-court-reconciliation.webp') }}" alt="From Family Court to Restored Marriage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">💍 Reclaimed Bond</span>
+        <!-- Spotlight Video + Transformation Cards Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left: Featured Spotlight Video Player (7 Cols) -->
+            <div class="lg:col-span-7 bg-[#FCFAF7] border-2 border-[#DFB254]/40 rounded-3xl p-4 sm:p-6 shadow-xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#54321A] text-[#FAF6F0] border border-[#DFB254]/40 shadow-xs">
+                        <span class="text-rose-400 animate-pulse">●</span>
+                        <span>Featured Video Message</span>
+                    </span>
+                    <span class="text-xs text-stone-500 font-medium">Jefna Hameed</span>
                 </div>
-                <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Marriage Guidance</span>
-                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">From Divorce Talks to Lasting Marriage</h4>
-                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">A couple walking out of Kerala Family Court reunited, hand-in-hand.</p>
+
+                <!-- Video Frame with Native HTML5 Controls & Poster -->
+                <div class="relative aspect-video rounded-2xl overflow-hidden bg-stone-900 shadow-inner border border-stone-800">
+                    <video controls
+                           playsinline
+                           preload="metadata"
+                           poster="{{ asset('images/gallery/kerala-muslim-family-home.webp') }}"
+                           class="w-full h-full object-cover">
+                        <source src="https://jefnahameed.com/storage/media/KEPOXo48Wg7hLqhmE0biDVcPfmBLVnoyNBeUEI1Y.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Video Caption & Malayalam Highlight -->
+                <div class="space-y-2 pt-1">
+                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#54321A] leading-tight">
+                        Family Matters — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും 🌹
+                    </h3>
+                    <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                        A personal talk from family counselor Jefna Hameed on the real foundation of marriage: active listening, emotional safety, and resolving hidden miscommunication before it harms the home.
+                    </p>
+                    <div class="pt-2 flex flex-wrap items-center gap-3">
+                        <button type="button"
+                                @click="$dispatch('open-booking-modal')"
+                                class="px-5 py-2.5 bg-[#54321A] hover:bg-[#3B2110] text-[#FAF6F0] font-semibold text-xs rounded-xl shadow-xs transition cursor-pointer">
+                            Book Session with Jefna 💍
+                        </button>
+                        <a href="https://wa.me/918590415943?text=Hello%20Jefna,%20I%20watched%20your%20Family%20Matters%20video%20on%20your%20website%20and%20would%20like%20guidance."
+                           target="_blank"
+                           class="px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs rounded-xl shadow-xs transition flex items-center gap-1.5">
+                            <span>Inquire on WhatsApp</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Item 2 -->
-            <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
-                <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/gallery/sunset-cliff-honeymoon.webp') }}" alt="Honeymoon Sunset Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#8B3846] text-white">🌅 Honeymoon Days</span>
+            <!-- Right: 2 Transformation Story Cards (5 Cols) -->
+            <div class="lg:col-span-5 space-y-6">
+                <!-- Card 1: Family Court to Reclaimed Bond -->
+                <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row lg:flex-col card-hover-lift">
+                    <div class="relative aspect-[16/9] sm:aspect-square sm:w-48 lg:w-full lg:aspect-[16/9] bg-stone-100 overflow-hidden shrink-0">
+                        <img src="{{ asset('images/gallery/family-court-reconciliation.webp') }}" alt="From Family Court to Restored Marriage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#54321A]/90 text-[#FAF6F0] border border-[#DFB254]/30">💍 Reclaimed Bond</span>
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-1">
+                        <div>
+                            <span class="text-[10px] font-bold text-[#8B3846] uppercase">Marriage Transformation</span>
+                            <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">From Divorce Talks to Honeymoon Days</h4>
+                            <p class="text-xs text-stone-600 mt-1.5 line-clamp-2">Reconciled couple walking out of Kerala Family Court reunited in peace.</p>
+                        </div>
+                        <a href="{{ route('media.index') }}" class="text-xs font-bold text-[#8B3846] hover:underline mt-3 inline-flex items-center gap-1">
+                            <span>Explore Full Gallery</span> →
+                        </a>
+                    </div>
                 </div>
-                <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Intimacy & Healing</span>
-                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Sunset Intimacy by the Ocean</h4>
-                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Restoring true emotional safety and mutual appreciation.</p>
+
+                <!-- Card 2: Sunset Intimacy Honeymoon Days -->
+                <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row lg:flex-col card-hover-lift">
+                    <div class="relative aspect-[16/9] sm:aspect-square sm:w-48 lg:w-full lg:aspect-[16/9] bg-stone-100 overflow-hidden shrink-0">
+                        <img src="{{ asset('images/gallery/houseboat-honeymoon-backwaters.webp') }}" alt="Backwater Houseboat Honeymoon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#8B3846] text-[#FAF6F0]">⛵ Backwater Honeymoon</span>
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-1">
+                        <div>
+                            <span class="text-[10px] font-bold text-[#8B3846] uppercase">Intimacy &amp; Healing</span>
+                            <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Kerala Backwater Houseboat Reconnection</h4>
+                            <p class="text-xs text-stone-600 mt-1.5 line-clamp-2">Rediscovering laughter and honeymoon romance through structured counseling.</p>
+                        </div>
+                        <a href="{{ route('media.index') }}" class="text-xs font-bold text-[#8B3846] hover:underline mt-3 inline-flex items-center gap-1">
+                            <span>View All 8 Moments</span> →
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Item 3 -->
-            <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
-                <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/gallery/loving-family-home.webp') }}" alt="Loving Family Home" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">🏡 Family Peace</span>
-                </div>
-                <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Family Sanctuary</span>
-                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Loving & Secure Family Life</h4>
-                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Creating an emotionally peaceful home where parents and children thrive.</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>

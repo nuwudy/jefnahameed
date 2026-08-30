@@ -190,6 +190,17 @@ class DatabaseSeeder extends Seeder
                 'sort_order' => 8,
             ],
             [
+                'title' => 'Family Matters — Insights by Jefna Hameed',
+                'slug' => 'family-matters-insights-jefna-hameed',
+                'type' => 'video',
+                'category' => 'Relationship Guidance',
+                'file_path' => '/storage/media/KEPOXo48Wg7hLqhmE0biDVcPfmBLVnoyNBeUEI1Y.mp4',
+                'caption' => 'A special personal talk by family counselor Jefna Hameed on understanding marital love, nurturing family harmony, and rebuilding peaceful bonds.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 1,
+            ],
+            [
                 'title' => 'Couples Synergy & Communication Frameworks',
                 'slug' => 'couples-synergy-communication-frameworks',
                 'type' => 'embed',
@@ -200,7 +211,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'Key insights on navigating expectations, daily emotional transparency, and constructive disagreement for married couples.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 9,
+                'sort_order' => 10,
             ],
         ];
 
