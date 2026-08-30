@@ -151,51 +151,135 @@
                 </div>
             </div>
 
-            <!-- Right Visual Portrait Presentation Column (5 cols) -->
+            <!-- Right Visual Hero Slider Carousel Column (5 cols) -->
             <div class="lg:col-span-5 relative">
-                <div class="relative mx-auto max-w-md lg:max-w-none">
+                <div x-data="{
+                        currentSlide: 0,
+                        slides: [
+                            {
+                                image: '{{ asset('images/hero-slider/jefna-portrait.webp') }}',
+                                title: 'Jefna Hameed',
+                                subtitle: 'Family Counselor & Relationship Specialist',
+                                tag: '✨ Certified Clinical Guidance',
+                                fit: 'object-cover'
+                            },
+                            {
+                                image: '{{ asset('images/hero-slider/husband-wife-bonding.webp') }}',
+                                title: 'Husband & Wife Bonding Class',
+                                subtitle: 'Effective Communication • Building Trust',
+                                tag: '🤝 Live Couple Cohort',
+                                fit: 'object-cover'
+                            },
+                            {
+                                image: '{{ asset('images/hero-slider/sharing-emotions-class.webp') }}',
+                                title: 'Sharing Emotions Class',
+                                subtitle: 'Stronger Bonds with Open Hearts',
+                                tag: '💞 Emotional Intimacy',
+                                fit: 'object-cover'
+                            },
+                            {
+                                image: '{{ asset('images/hero-slider/malayalam-bonding-class.webp') }}',
+                                title: 'ദാമ്പത്യ ബന്ധം ശക്തിപ്പെടുത്താം',
+                                subtitle: 'സ്നേഹത്തോടെ ജീവിതം നിർമ്മിക്കാം 🌹',
+                                tag: '🌹 Malayalam Masterclass',
+                                fit: 'object-cover'
+                            }
+                        ],
+                        timer: null,
+                        init() {
+                            this.timer = setInterval(() => {
+                                this.next();
+                            }, 4500);
+                        },
+                        pause() {
+                            clearInterval(this.timer);
+                        },
+                        resume() {
+                            this.pause();
+                            this.timer = setInterval(() => {
+                                this.next();
+                            }, 4500);
+                        },
+                        next() {
+                            this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+                        },
+                        prev() {
+                            this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+                        }
+                     }"
+                     @mouseenter="pause()"
+                     @mouseleave="resume()"
+                     class="relative mx-auto max-w-md lg:max-w-none select-none">
+                     
                     <!-- Main Card Frame with Warm Ambient Glow -->
-                    <div class="relative rounded-3xl bg-[#FCFAF7] border border-[#DFB254]/30 p-3.5 shadow-2xl overflow-hidden group ambient-warm-glow">
-                        <div class="relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-stone-100 shadow-inner">
-                            <!-- Real Portrait Photo -->
-                            <img src="{{ asset('images/jefna-hameed.webp') }}"
-                                 alt="Jefna Hameed — Family Counselor & Relationship Specialist"
-                                 class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
-                                 loading="eager">
+                    <div class="relative rounded-3xl bg-[#FCFAF7] border-2 border-[#DFB254]/40 p-3 sm:p-3.5 shadow-2xl overflow-hidden group ambient-warm-glow">
+                        <div class="relative aspect-square sm:aspect-[4/5] rounded-2xl overflow-hidden bg-stone-900 shadow-inner">
                             
-                            <!-- Soft Warm Gradient Overlay for Legibility -->
-                            <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#3B2110]/95 via-[#54321A]/50 to-transparent flex items-end p-5">
-                                <div>
-                                    <h3 class="font-serif text-xl font-bold text-[#FAF6F0] leading-tight flex items-center gap-2">
-                                        <span>Jefna Hameed</span>
-                                        <span class="text-xs text-amber-300">✨</span>
-                                    </h3>
-                                    <p class="text-xs font-medium text-[#DFB254] tracking-wide uppercase mt-0.5">Family Counselor & Relationship Specialist</p>
+                            <!-- Slide Image Streams -->
+                            <template x-for="(slide, index) in slides" :key="index">
+                                <div x-show="currentSlide === index"
+                                     x-transition:enter="transition ease-out duration-700"
+                                     x-transition:enter-start="opacity-0 scale-105"
+                                     x-transition:enter-end="opacity-100 scale-100"
+                                     x-transition:leave="transition ease-in duration-500"
+                                     x-transition:leave-start="opacity-100 scale-100"
+                                     x-transition:leave-end="opacity-0 scale-95"
+                                     class="absolute inset-0 w-full h-full">
+                                    
+                                    <img :src="slide.image"
+                                         :alt="slide.title"
+                                         class="w-full h-full object-cover object-top"
+                                         loading="eager">
+                                    
+                                    <!-- Soft Warm Gradient Overlay for Legibility -->
+                                    <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#3B2110]/95 via-[#54321A]/60 to-transparent flex items-end p-5">
+                                        <div class="w-full">
+                                            <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#DFB254] text-[#3B2110] mb-1.5 shadow-xs" x-text="slide.tag"></span>
+                                            <h3 class="font-serif text-lg sm:text-xl font-bold text-[#FAF6F0] leading-tight flex items-center gap-2" x-text="slide.title"></h3>
+                                            <p class="text-xs font-medium text-stone-300 tracking-wide mt-0.5" x-text="slide.subtitle"></p>
+                                        </div>
+                                    </div>
                                 </div>
+                            </template>
+
+                            <!-- Slider Nav Buttons (Prev / Next) -->
+                            <button type="button"
+                                    @click="prev()"
+                                    aria-label="Previous Slide"
+                                    class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-[#54321A]/80 hover:bg-[#3B2110] text-[#FAF6F0] border border-[#DFB254]/40 flex items-center justify-center text-sm shadow-md transition transform active:scale-90 z-20 cursor-pointer backdrop-blur-xs">
+                                ❮
+                            </button>
+                            <button type="button"
+                                    @click="next()"
+                                    aria-label="Next Slide"
+                                    class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-[#54321A]/80 hover:bg-[#3B2110] text-[#FAF6F0] border border-[#DFB254]/40 flex items-center justify-center text-sm shadow-md transition transform active:scale-90 z-20 cursor-pointer backdrop-blur-xs">
+                                ❯
+                            </button>
+
+                            <!-- Slide Pagination Indicators (Dots / Pills) -->
+                            <div class="absolute top-4 right-4 z-20 flex items-center gap-1.5 bg-black/50 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/20">
+                                <template x-for="(slide, index) in slides" :key="index">
+                                    <button type="button"
+                                            @click="currentSlide = index"
+                                            class="transition-all duration-300 rounded-full cursor-pointer"
+                                            :class="currentSlide === index ? 'w-5 h-2 bg-[#DFB254]' : 'w-2 h-2 bg-white/50 hover:bg-white/80'"
+                                            :aria-label="'Go to slide ' + (index + 1)"></button>
+                                </template>
                             </div>
+
                         </div>
 
                         <!-- Floating Credential Card - Top Left -->
-                        <div class="absolute top-6 left-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-[#DFB254]/40 flex items-center gap-2.5">
-                            <div class="w-7 h-7 rounded-full bg-[#FAF2DE] text-[#8C651A] flex items-center justify-center text-xs font-bold">
+                        <div class="absolute top-5 left-5 glass-panel px-3 py-1.5 rounded-2xl shadow-lg border border-[#DFB254]/40 flex items-center gap-2 z-20 pointer-events-none">
+                            <div class="w-6 h-6 rounded-full bg-[#FAF2DE] text-[#8C651A] flex items-center justify-center text-xs font-bold">
                                 💍
                             </div>
                             <div>
-                                <p class="text-[11px] font-bold text-[#54321A] leading-tight">Marriage Counselor</p>
-                                <p class="text-[10px] text-stone-500">Certified Practitioner</p>
+                                <p class="text-[10px] font-bold text-[#54321A] leading-tight">Marriage Guidance</p>
+                                <p class="text-[9px] text-stone-500">Certified Practitioner</p>
                             </div>
                         </div>
 
-                        <!-- Floating Stats Card - Bottom Right -->
-                        <div class="absolute bottom-6 right-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-[#DFB254]/40 flex items-center gap-2.5">
-                            <div class="w-7 h-7 rounded-full bg-[#FAECF0] text-[#8B3846] flex items-center justify-center text-xs font-bold">
-                                💞
-                            </div>
-                            <div>
-                                <p class="text-[11px] font-bold text-[#54321A] leading-tight">1,500+ Couples</p>
-                                <p class="text-[10px] text-stone-500">Restored Harmony</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
