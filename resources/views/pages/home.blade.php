@@ -5,6 +5,80 @@
 
 @section('content')
 
+<!-- 0. CUTE THROBBING ANNOUNCEMENT TICKER -->
+<div class="relative overflow-hidden bg-gradient-to-r from-[#FAF2DE] via-[#FAECF0] to-[#FAF2DE] border-b border-[#DFB254]/30 py-2 sm:py-2.5 text-xs text-[#54321A]">
+    <div class="max-w-7xl mx-auto px-4 flex items-center gap-3">
+        <!-- Cute Pulsing/Throbbing Love Pill (Anchor) -->
+        <div class="shrink-0 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 border border-[#8B3846]/30 shadow-xs text-[11px] font-bold text-[#8B3846]">
+            <span class="animate-cute-throb text-sm">💖</span>
+            <span>Live Notice</span>
+        </div>
+
+        <!-- Marquee Ticker Stream -->
+        <div class="overflow-hidden whitespace-nowrap flex-1 relative flex items-center">
+            <div class="animate-marquee flex items-center gap-8 text-[11px] sm:text-xs font-medium">
+                <!-- Group 1 -->
+                <span class="inline-flex items-center gap-2">
+                    <span class="text-[#8B3846]">🌹</span>
+                    <span>Upcoming Masterclass: <strong>Avoid Toxic Relationships</strong></span>
+                    <a href="#workshops" class="font-bold underline text-[#8B3846] hover:text-[#6C2430]">Reserve Seat →</a>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span class="text-[#54321A]">💍</span>
+                    <span>Reclaim Your Marriage: <strong>Confidential Couple Guidance Slots Open</strong></span>
+                    <button type="button" @click="$dispatch('open-booking-modal')" class="font-bold underline text-[#54321A] hover:text-[#3B2110] cursor-pointer">Book Session →</button>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span>✨</span>
+                    <span>1,500+ Couples &amp; Individuals Guided to Peaceful, Loving Bonds</span>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span>🕊️</span>
+                    <span>100% Private, Safe &amp; Non-Judgmental Psychological Sanctuary</span>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span>💌</span>
+                    <span>WhatsApp Inquiry Fast-Track: <strong>+91 85904 15943</strong></span>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+
+                <!-- Group 2 (Duplicate for Seamless Continuous Loop) -->
+                <span class="inline-flex items-center gap-2">
+                    <span class="text-[#8B3846]">🌹</span>
+                    <span>Upcoming Masterclass: <strong>Avoid Toxic Relationships</strong></span>
+                    <a href="#workshops" class="font-bold underline text-[#8B3846] hover:text-[#6C2430]">Reserve Seat →</a>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span class="text-[#54321A]">💍</span>
+                    <span>Reclaim Your Marriage: <strong>Confidential Couple Guidance Slots Open</strong></span>
+                    <button type="button" @click="$dispatch('open-booking-modal')" class="font-bold underline text-[#54321A] hover:text-[#3B2110] cursor-pointer">Book Session →</button>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span>✨</span>
+                    <span>1,500+ Couples &amp; Individuals Guided to Peaceful, Loving Bonds</span>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span>🕊️</span>
+                    <span>100% Private, Safe &amp; Non-Judgmental Psychological Sanctuary</span>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+                <span class="inline-flex items-center gap-2">
+                    <span>💌</span>
+                    <span>WhatsApp Inquiry Fast-Track: <strong>+91 85904 15943</strong></span>
+                </span>
+                <span class="text-[#C29336]">✦</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- 1. HERO SECTION -->
 <section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 honeymoon-glow">
     <!-- Subtle Ambient Warm Glows -->
