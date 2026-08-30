@@ -74,55 +74,41 @@
             <div class="lg:col-span-5 relative">
                 <div class="relative mx-auto max-w-md lg:max-w-none">
                     <!-- Main Card Frame -->
-                    <div class="relative rounded-3xl bg-[#FAF8F5] border border-stone-200 p-4 shadow-xl overflow-hidden">
-                        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-b from-[#3B4E3B]/10 to-[#FAF0EE]">
+                    <div class="relative rounded-3xl bg-[#FAF8F5] border border-stone-200 p-3.5 shadow-2xl overflow-hidden group">
+                        <div class="relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-stone-100 shadow-inner">
+                            <!-- Real Portrait Photo -->
+                            <img src="{{ asset('images/jefna-hameed.jpg') }}"
+                                 alt="Jefna Hameed — Family Counselor & Relationship Specialist"
+                                 class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+                                 loading="eager">
                             
-                            <!-- Stylized Aesthetic Portrait Canvas -->
-                            <div class="w-full h-full flex flex-col items-center justify-between p-8 text-center relative z-10">
-                                <!-- Top Botanical Leaf SVG -->
-                                <div class="w-16 h-16 rounded-full bg-[#3B4E3B]/10 flex items-center justify-center text-[#3B4E3B] mb-2">
-                                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v18m0-18C8.5 7.5 6 12 6 18c6 0 10.5-2.5 12-6 0-6-2.5-10.5-6-12z"/>
-                                    </svg>
-                                </div>
-
-                                <div class="my-auto space-y-3">
-                                    <div class="w-28 h-28 rounded-full bg-[#3B4E3B] text-[#F7F3EE] flex items-center justify-center font-serif text-4xl font-bold mx-auto shadow-md border-4 border-white">
-                                        JH
-                                    </div>
-                                    <div>
-                                        <h3 class="font-serif text-2xl font-bold text-[#3B4E3B]">Jefna Hameed</h3>
-                                        <p class="text-xs font-semibold uppercase tracking-widest text-[#7A3528] mt-0.5">Family Counselor</p>
-                                        <p class="text-xs text-stone-600 mt-1">Specialist in Relationship Healing & Family Dynamics</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full bg-white/85 backdrop-blur-sm border border-stone-200/80 rounded-xl p-3 text-left">
-                                    <p class="text-[11px] font-medium text-stone-600 italic">
-                                        "Healing begins when you create space for honesty, self-respect, and emotional safety."
-                                    </p>
+                            <!-- Soft Gradient Overlay for Legibility -->
+                            <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#2A382A]/90 via-[#2A382A]/40 to-transparent flex items-end p-5">
+                                <div>
+                                    <h3 class="font-serif text-xl font-bold text-white leading-tight">Jefna Hameed</h3>
+                                    <p class="text-xs font-medium text-emerald-200 tracking-wide uppercase mt-0.5">Family Counselor & Relationship Specialist</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Floating Credential Card - Top Left -->
-                        <div class="absolute -top-3 -left-3 glass-panel px-4 py-2.5 rounded-2xl shadow-lg border border-stone-200/80 flex items-center gap-2.5">
-                            <div class="w-8 h-8 rounded-full bg-[#FAF0EE] text-[#7A3528] flex items-center justify-center text-sm font-bold">
+                        <div class="absolute top-6 left-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-stone-200/90 flex items-center gap-2.5">
+                            <div class="w-7 h-7 rounded-full bg-[#FAF0EE] text-[#7A3528] flex items-center justify-center text-xs font-bold">
                                 🎓
                             </div>
                             <div>
-                                <p class="text-[11px] font-bold text-stone-800">Family Counselor</p>
+                                <p class="text-[11px] font-bold text-stone-800 leading-tight">Family Counselor</p>
                                 <p class="text-[10px] text-stone-500">Certified Practitioner</p>
                             </div>
                         </div>
 
                         <!-- Floating Stats Card - Bottom Right -->
-                        <div class="absolute -bottom-3 -right-3 glass-panel px-4 py-2.5 rounded-2xl shadow-lg border border-stone-200/80 flex items-center gap-2.5">
-                            <div class="w-8 h-8 rounded-full bg-[#EEF3ED] text-[#3B4E3B] flex items-center justify-center text-sm font-bold">
+                        <div class="absolute bottom-6 right-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-stone-200/90 flex items-center gap-2.5">
+                            <div class="w-7 h-7 rounded-full bg-[#EEF3ED] text-[#3B4E3B] flex items-center justify-center text-xs font-bold">
                                 ⭐
                             </div>
                             <div>
-                                <p class="text-[11px] font-bold text-stone-800">1,500+ Sessions</p>
+                                <p class="text-[11px] font-bold text-stone-800 leading-tight">1,500+ Sessions</p>
                                 <p class="text-[10px] text-stone-500">Empathetic Guidance</p>
                             </div>
                         </div>
@@ -307,12 +293,16 @@
             
             <!-- Left Bio Card Presentation (5 cols) -->
             <div class="lg:col-span-5">
-                <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 shadow-md relative">
-                    <div class="w-20 h-20 rounded-2xl bg-[#3B4E3B] text-[#F7F3EE] flex items-center justify-center font-serif text-3xl font-bold mb-4">
-                        JH
+                <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-[#3B4E3B]/20 shadow-sm shrink-0">
+                            <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Jefna Hameed" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-[#3B4E3B]">Jefna Hameed</h3>
+                            <p class="text-xs font-semibold text-[#7A3528] uppercase tracking-wider mt-0.5">Family Counselor & Relationship Specialist</p>
+                        </div>
                     </div>
-                    <h3 class="font-serif text-2xl font-bold text-[#3B4E3B]">Jefna Hameed</h3>
-                    <p class="text-xs font-semibold text-[#7A3528] uppercase tracking-wider mt-0.5">Family Counselor & Relationship Specialist</p>
                     
                     <div class="mt-4 pt-4 border-t border-stone-100 space-y-2.5 text-xs text-stone-600">
                         <div class="flex items-center gap-2">
