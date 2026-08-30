@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
         );
 
         // 1. Featured Masterclass: "How to Heal Toxic Relationships"
+        Workshop::where('slug', 'avoid-toxic-relationships')->delete();
+
         Workshop::updateOrCreate(
             ['slug' => 'how-to-heal-toxic-relationships'],
             [

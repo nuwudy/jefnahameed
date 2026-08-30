@@ -11,9 +11,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $featuredWorkshop = Workshop::where('is_featured', true)
-            ->where('is_active', true)
-            ->first();
+        $featuredWorkshop = Workshop::where('slug', 'how-to-heal-toxic-relationships')->first()
+            ?? Workshop::where('is_featured', true)->where('is_active', true)->first();
 
         $allWorkshops = Workshop::where('is_active', true)
             ->orderBy('is_featured', 'desc')
