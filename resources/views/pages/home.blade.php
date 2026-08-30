@@ -19,18 +19,18 @@
                 <!-- Badge Pill -->
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EEF3ED] border border-[#3B4E3B]/20 text-[#3B4E3B] text-xs font-semibold tracking-wider uppercase">
                     <span class="w-2 h-2 rounded-full bg-[#3B4E3B]"></span>
-                    Family Counseling & Relationship Guidance
+                    Clinical Psychology & Relationship Guidance
                 </div>
 
                 <!-- Primary Headline -->
                 <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#3B4E3B] tracking-tight leading-[1.15]">
-                    Break Free from Toxic Patterns. <br class="hidden sm:inline" />
-                    <span class="italic font-normal text-[#7A3528]">Reclaim Your Self-Worth.</span>
+                    From Toxic Relationships to a <br class="hidden sm:inline" />
+                    <span class="italic font-normal text-[#7A3528]">Loving Family Life.</span>
                 </h1>
 
                 <!-- Subheadline with Malayalam subtle nuance -->
                 <p class="text-base sm:text-lg text-stone-700 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Empathetic, evidence-based relationship counselling and masterclasses. Helping individuals break free from emotional manipulation, set guilt-free boundaries, and rebuild thriving, peaceful relationships.
+                    Break the cycle of emotional stress and miscommunication. Through specialized individual counselling, couple guidance, and interactive workshops, discover the clarity needed to build a secure, peaceful, and loving bond at home.
                 </p>
                 <p class="text-xs sm:text-sm text-stone-600 font-serif italic max-w-xl mx-auto lg:mx-0 border-l-2 border-[#7A3528] pl-3 py-1">
                     "ഭാര്യയും ഭർത്താവും — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും. ശാസ്ത്രീയമായ കൗൺസിലിംഗിലൂടെ സന്തോഷമുള്ള ബന്ധങ്ങൾ കെട്ടിപ്പടുക്കാം."
@@ -48,7 +48,7 @@
                     </button>
                     <a href="#workshops"
                        class="w-full sm:w-auto px-7 py-4 bg-[#FAF8F5] hover:bg-white text-[#7A3528] border border-[#7A3528]/30 font-medium text-sm rounded-2xl shadow-sm hover:shadow transition text-center flex items-center justify-center gap-2">
-                        <span>Explore Masterclasses</span>
+                        <span>Explore Workshops</span>
                         <span class="inline-flex px-2 py-0.5 text-[10px] font-bold bg-[#FAF0EE] text-[#7A3528] rounded-full">New</span>
                     </a>
                 </div>
