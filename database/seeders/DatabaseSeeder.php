@@ -62,11 +62,7 @@ class DatabaseSeeder extends Seeder
                 'original_fee' => 1999.00,
                 'language' => 'Malayalam & English (Bilingual friendly)',
                 'target_audience' => 'Women, Young Adults & Anyone Seeking Clarity in Relationships',
-                'upcoming_batches' => [
-                    'Saturday, 14th September 2024 • 7:30 PM - 10:00 PM IST',
-                    'Sunday, 22nd September 2024 • 10:00 AM - 12:30 PM IST',
-                    'Saturday, 28th September 2024 • 7:30 PM - 10:00 PM IST',
-                ],
+                'upcoming_batches' => [],
                 'is_featured' => true,
                 'is_active' => true,
             ]
