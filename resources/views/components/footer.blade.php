@@ -51,6 +51,7 @@
                     <li><a href="#workshops" class="hover:text-white transition">Toxic Relationship Masterclass</a></li>
                     <li><a href="#counselling-services" class="hover:text-white transition">Counselling Services</a></li>
                     <li><a href="#why-therapy" class="hover:text-white transition">Why Family Counselling?</a></li>
+                    <li><a href="{{ route('media.index') }}" class="hover:text-white transition">Media & Video Gallery</a></li>
                     <li><a href="#testimonials" class="hover:text-white transition">Client Testimonials</a></li>
                     <li><a href="#faq" class="hover:text-white transition">Frequently Asked Questions</a></li>
                 </ul>

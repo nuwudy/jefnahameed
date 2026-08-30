@@ -86,3 +86,32 @@ test('newsletter subscription registers new subscriber', function () {
 
     expect(NewsletterSubscriber::where('email', 'newsletter.reader@example.com')->exists())->toBeTrue();
 });
+
+test('media gallery page loads successfully with media items', function () {
+    $response = $this->get('/media');
+
+    $response->assertStatus(200);
+    $response->assertSee('Media Library & Video Insights', false);
+    $response->assertSee('Avoid Toxic Relationships');
+});
+
+test('media library manager allows adding and deleting media', function () {
+    \Livewire\Livewire::test(\App\Livewire\MediaLibraryManager::class)
+        ->set('title', 'Empowering Couple Harmony Masterclass')
+        ->set('type', 'embed')
+        ->set('category', 'Moments & Talks')
+        ->set('embed_url', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+        ->set('caption', 'A transformative talk for newlyweds.')
+        ->call('save')
+        ->assertSet('isSuccess', true);
+
+    $item = \App\Models\MediaItem::where('title', 'Empowering Couple Harmony Masterclass')->first();
+    expect($item)->not->toBeNull();
+
+    \Livewire\Livewire::test(\App\Livewire\MediaLibraryManager::class)
+        ->call('delete', $item->id)
+        ->assertSet('isSuccess', true);
+
+    expect(\App\Models\MediaItem::find($item->id))->toBeNull();
+});
+

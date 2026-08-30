@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\MediaItem;
 use App\Models\Testimonial;
 use App\Models\Workshop;
 use Illuminate\Database\Seeder;
@@ -86,7 +87,64 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 3. Testimonials
+        // 3. Media Items (Photos, Masterclass Moments & Video Talks)
+        $mediaItems = [
+            [
+                'title' => 'Jefna Hameed — Relationship Transformation & Clinical Consultation',
+                'slug' => 'jefna-hameed-portrait-consultation',
+                'type' => 'image',
+                'category' => 'Counselling & Therapy',
+                'file_path' => '/images/jefna-hameed.jpg',
+                'caption' => 'Confidential 1-on-1 personal guidance and couple counseling sessions conducted both in-person and online worldwide.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 1,
+            ],
+            [
+                'title' => 'Avoid Toxic Relationships — Masterclass Highlights',
+                'slug' => 'avoid-toxic-relationships-masterclass-highlights',
+                'type' => 'image',
+                'category' => 'Workshops & Events',
+                'file_path' => '/images/jefna-hameed.jpg',
+                'caption' => 'An empowering interactive workshop guiding women to recognize subtle gaslighting, guilt-tripping, and restore inner emotional security.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 2,
+            ],
+            [
+                'title' => 'Couples Synergy & Communication Frameworks',
+                'slug' => 'couples-synergy-communication-frameworks',
+                'type' => 'embed',
+                'category' => 'Moments & Talks',
+                'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                'thumbnail_path' => '/images/jefna-hameed.jpg',
+                'duration' => '08:45',
+                'caption' => 'Key insights on navigating expectations, daily emotional transparency, and constructive disagreement for married couples.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 3,
+            ],
+            [
+                'title' => 'Breaking Trauma Bonds & Emotional Boundary Setting',
+                'slug' => 'breaking-trauma-bonds-emotional-boundaries',
+                'type' => 'image',
+                'category' => 'Relationship Guidance',
+                'file_path' => '/images/jefna-hameed.jpg',
+                'caption' => 'Psychological tools and assertiveness scripts to maintain healthy personal boundaries without feeling guilty.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 4,
+            ],
+        ];
+
+        foreach ($mediaItems as $item) {
+            MediaItem::updateOrCreate(
+                ['slug' => $item['slug']],
+                $item
+            );
+        }
+
+        // 4. Testimonials
         $testimonials = [
             [
                 'client_name' => 'Fathima S.',

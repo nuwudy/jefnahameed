@@ -28,6 +28,9 @@
                 </a>
                 <a href="#counselling-services" class="text-sm font-medium text-stone-700 hover:text-[#3B4E3B] transition">Counselling Services</a>
                 <a href="#why-therapy" class="text-sm font-medium text-stone-700 hover:text-[#3B4E3B] transition">Approach</a>
+                <a href="{{ route('media.index') }}" class="text-sm font-medium text-stone-700 hover:text-[#3B4E3B] transition flex items-center gap-1">
+                    <span>Media & Gallery</span>
+                </a>
                 <a href="#testimonials" class="text-sm font-medium text-stone-700 hover:text-[#3B4E3B] transition">Stories</a>
                 <a href="#contact" class="text-sm font-medium text-stone-700 hover:text-[#3B4E3B] transition">Contact</a>
             </nav>
@@ -72,6 +75,7 @@
         <a href="#workshops" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#3B4E3B]">Programs & Masterclasses</a>
         <a href="#counselling-services" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#3B4E3B]">Counselling Services</a>
         <a href="#why-therapy" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#3B4E3B]">Our Approach</a>
+        <a href="{{ route('media.index') }}" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#3B4E3B]">Media & Video Gallery</a>
         <a href="#testimonials" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#3B4E3B]">Client Stories</a>
         <a href="#contact" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#3B4E3B]">Contact & Location</a>
         <div class="pt-3 border-t border-stone-200 flex flex-col gap-2">

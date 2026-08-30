@@ -493,6 +493,68 @@
 </section>
 
 
+<!-- 6.5 MEDIA & VIDEO HIGHLIGHTS -->
+<section id="media-preview" class="py-16 sm:py-24 bg-[#FAF8F5] border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div class="max-w-2xl">
+                <span class="badge-terracotta mb-2">Media & Video Insights</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+                    Workshop Highlights & Guidance Talks
+                </h2>
+                <p class="text-sm text-stone-600 mt-2">
+                    Glimpses into our live interactive cohorts, relationship masterclasses, and practical psychology frameworks.
+                </p>
+            </div>
+            <a href="{{ route('media.index') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-stone-50 text-[#3B4E3B] border border-stone-200 font-semibold text-xs rounded-xl shadow-xs transition shrink-0">
+                <span>View Full Media Library (Photos & Videos)</span> →
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Item 1 -->
+            <div class="group bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Jefna Hameed Consultation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-stone-900/80 text-white">📷 Photo</span>
+                </div>
+                <div class="p-5">
+                    <span class="text-[10px] font-semibold text-[#7A3528] uppercase">Counselling Practice</span>
+                    <h4 class="font-serif text-base font-bold text-stone-900 mt-1">1-on-1 Confidential Guidance</h4>
+                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Creating safe spaces for emotional clarity and self-worth.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="group bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Workshop Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#7A3528] text-white">🎬 Masterclass</span>
+                </div>
+                <div class="p-5">
+                    <span class="text-[10px] font-semibold text-[#7A3528] uppercase">Live Cohorts</span>
+                    <h4 class="font-serif text-base font-bold text-stone-900 mt-1">Avoid Toxic Relationships</h4>
+                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Women empowering masterclass on boundary setting and emotional safety.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="group bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Couples Synergy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-stone-900/80 text-white">🎥 Video Talk</span>
+                </div>
+                <div class="p-5">
+                    <span class="text-[10px] font-semibold text-[#7A3528] uppercase">Marriage Guidance</span>
+                    <h4 class="font-serif text-base font-bold text-stone-900 mt-1">Couples Synergy & Harmony</h4>
+                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Practical frameworks to transition from conflict to deep connection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- 7. INTERACTIVE FAQ ACCORDION -->
 <section id="faq" class="py-16 sm:py-24 bg-[#F7F3EE]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" x-data="{ active: null }">
