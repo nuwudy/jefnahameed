@@ -172,3 +172,18 @@
 .animate-marquee:hover {
     animation-play-state: paused;
 }
+
+@keyframes image-ticker {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+.animate-image-ticker {
+    display: flex;
+    animation: image-ticker 36s linear infinite;
+}
+
+.animate-image-ticker:hover {
+    animation-play-state: paused;
+}
+

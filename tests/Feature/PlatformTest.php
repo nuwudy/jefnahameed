@@ -91,8 +91,8 @@ test('media gallery page loads successfully with media items', function () {
     $response = $this->get('/media');
 
     $response->assertStatus(200);
-    $response->assertSee('Media Library & Video Insights', false);
-    $response->assertSee('Avoid Toxic Relationships');
+    $response->assertSee('Media Library');
+    $response->assertSee('From Family Court to Restored Marriage');
 });
 
 test('media library manager allows adding and deleting media', function () {

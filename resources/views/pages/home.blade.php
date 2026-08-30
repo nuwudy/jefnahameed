@@ -200,6 +200,8 @@
     </div>
 </section>
 
+<!-- 1.5 REAL TRANSFORMATION & HONEYMOON IMAGE TICKER SLIDER -->
+<x-image-ticker-slider />
 
 <!-- 2. FEATURED MASTERCLASS SECTION -->
 <section id="workshops" class="py-16 sm:py-24 bg-[#FCFAF7] border-y border-[#E8DFD3]">
@@ -594,39 +596,39 @@
             <!-- Item 1 -->
             <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Jefna Hameed Consultation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">📷 Photo</span>
+                    <img src="{{ asset('images/gallery/family-court-reconciliation.webp') }}" alt="From Family Court to Restored Marriage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">💍 Reclaimed Bond</span>
                 </div>
                 <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Counselling Practice</span>
-                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">1-on-1 Confidential Guidance</h4>
-                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Creating safe spaces for emotional clarity and self-worth.</p>
+                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Marriage Guidance</span>
+                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">From Divorce Talks to Lasting Marriage</h4>
+                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">A couple walking out of Kerala Family Court reunited, hand-in-hand.</p>
                 </div>
             </div>
 
             <!-- Item 2 -->
             <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Workshop Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#8B3846] text-white">🎬 Masterclass</span>
+                    <img src="{{ asset('images/gallery/sunset-cliff-honeymoon.webp') }}" alt="Honeymoon Sunset Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#8B3846] text-white">🌅 Honeymoon Days</span>
                 </div>
                 <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Live Cohorts</span>
-                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Avoid Toxic Relationships</h4>
-                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Women empowering masterclass on boundary setting and emotional safety.</p>
+                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Intimacy & Healing</span>
+                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Sunset Intimacy by the Ocean</h4>
+                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Restoring true emotional safety and mutual appreciation.</p>
                 </div>
             </div>
 
             <!-- Item 3 -->
             <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Couples Synergy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">🎥 Video Talk</span>
+                    <img src="{{ asset('images/gallery/loving-family-home.webp') }}" alt="Loving Family Home" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">🏡 Family Peace</span>
                 </div>
                 <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Marriage Guidance</span>
-                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Couples Synergy & Harmony</h4>
-                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Practical frameworks to transition from conflict to deep connection.</p>
+                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Family Sanctuary</span>
+                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Loving & Secure Family Life</h4>
+                    <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Creating an emotionally peaceful home where parents and children thrive.</p>
                 </div>
             </div>
         </div>
