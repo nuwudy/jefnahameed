@@ -96,13 +96,18 @@
             </div>
         </div>
 
-        <!-- Bottom Copyright -->
+        <!-- Bottom Copyright & Admin Portal -->
         <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
             <p>© {{ date('Y') }} Jefna Hameed. All rights reserved. Professional Family Counseling & Relationship Guidance.</p>
-            <div class="flex items-center gap-6">
-                <span>Privacy & Confidentiality Guaranteed</span>
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                <span>Privacy &amp; Confidentiality Guaranteed</span>
                 <span>•</span>
                 <a href="#contact" class="hover:text-stone-300">Book Session</a>
+                <span>•</span>
+                <a href="{{ route('admin.login') }}" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1F140D] border border-[#DFB254]/40 text-[#DFB254] hover:text-white hover:border-[#DFB254] transition text-[11px] font-medium shadow-xs">
+                    <span class="w-4 h-4 rounded-full bg-[#54321A] text-[#FAF6F0] flex items-center justify-center text-[9px] font-bold">JH</span>
+                    <span>Jefna Hameed Admin Login</span>
+                </a>
             </div>
         </div>
     </div>

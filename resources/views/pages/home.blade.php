@@ -154,7 +154,7 @@
                     <div class="relative rounded-3xl bg-[#FCFAF7] border border-[#DFB254]/30 p-3.5 shadow-2xl overflow-hidden group ambient-warm-glow">
                         <div class="relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-stone-100 shadow-inner">
                             <!-- Real Portrait Photo -->
-                            <img src="{{ asset('images/jefna-hameed.jpg') }}"
+                            <img src="{{ asset('images/jefna-hameed.webp') }}"
                                  alt="Jefna Hameed — Family Counselor & Relationship Specialist"
                                  class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                                  loading="eager">
@@ -370,7 +370,7 @@
                 <div class="bg-white border border-[#DFB254]/30 rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
                     <div class="flex items-center gap-4 mb-5">
                         <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-[#DFB254]/40 shadow-sm shrink-0">
-                            <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Jefna Hameed" class="w-full h-full object-cover object-top">
+                            <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Jefna Hameed" class="w-full h-full object-cover object-top">
                         </div>
                         <div>
                             <h3 class="font-serif text-2xl font-bold text-[#54321A] flex items-center gap-1.5">
@@ -594,7 +594,7 @@
             <!-- Item 1 -->
             <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Jefna Hameed Consultation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Jefna Hameed Consultation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">📷 Photo</span>
                 </div>
                 <div class="p-5">
@@ -607,7 +607,7 @@
             <!-- Item 2 -->
             <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Workshop Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Workshop Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#8B3846] text-white">🎬 Masterclass</span>
                 </div>
                 <div class="p-5">
@@ -620,7 +620,7 @@
             <!-- Item 3 -->
             <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                    <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Couples Synergy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/jefna-hameed.webp') }}" alt="Couples Synergy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">🎥 Video Talk</span>
                 </div>
                 <div class="p-5">

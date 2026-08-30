@@ -13,15 +13,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('title', 'Jefna Hameed | Family Counselor & Relationship Guidance')">
-    <meta property="og:description" content="@yield('meta_description', 'Empathetic, evidence-based relationship counselling and family frameworks for individuals and couples.')">
-    <meta property="og:image" content="{{ asset('images/og-preview.jpg') }}">
+    <meta property="og:title" content="@yield('title', 'Jefna Hameed | Family Counselor & Relationship Specialist')">
+    <meta property="og:description" content="@yield('meta_description', 'Professional family counseling and relationship guidance with Jefna Hameed.')">
+    <meta property="og:image" content="{{ asset('images/og-preview.webp') }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('title', 'Jefna Hameed | Family Counselor & Relationship Guidance')">
-    <meta name="twitter:description" content="@yield('meta_description', 'Break free from toxic patterns, rebuild self-worth, and foster healthy family bonds.')">
-    <meta name="twitter:image" content="{{ asset('images/og-preview.jpg') }}">
+    <meta name="twitter:title" content="@yield('title', 'Jefna Hameed | Family Counselor & Relationship Specialist')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Professional family counseling and relationship guidance with Jefna Hameed.')">
+    <meta name="twitter:image" content="{{ asset('images/og-preview.webp') }}">
 
     <!-- Favicons & Theme Color -->
     <meta name="theme-color" content="#3B4E3B">

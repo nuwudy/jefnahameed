@@ -40,7 +40,7 @@ class MediaItem extends Model
             return asset('storage/' . $this->file_path);
         }
 
-        return $this->embed_url ?? asset('images/jefna-hameed.jpg');
+        return $this->embed_url ?? asset('images/jefna-hameed.webp');
     }
 
     public function getDisplayThumbnailAttribute(): string
