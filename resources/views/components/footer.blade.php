@@ -31,11 +31,11 @@
                     </div>
                     <div>
                         <h4 class="font-serif text-xl font-bold text-white">Jefna Hameed</h4>
-                        <p class="text-xs text-stone-400 font-sans uppercase tracking-wider">Clinical Psychologist & Relationship Specialist</p>
+                        <p class="text-xs text-stone-400 font-sans uppercase tracking-wider">Family Counselor & Relationship Specialist</p>
                     </div>
                 </div>
                 <p class="text-xs text-stone-400 leading-relaxed pr-6">
-                    Dedicated to providing empathetic, evidence-based psychological counselling and relationship frameworks. Helping individuals and couples build healthy boundaries, heal from emotional trauma, and nurture meaningful bonds.
+                    Dedicated to providing empathetic, evidence-based relationship counselling and family frameworks. Helping individuals and couples build healthy boundaries, heal from emotional strain, and nurture meaningful, lasting bonds.
                 </p>
                 <div class="pt-2">
                     <p class="text-xs text-stone-400 mb-2 font-medium">Subscribe for Mindful Notes & Workshop Announcements:</p>
@@ -50,7 +50,7 @@
                     <li><a href="#about" class="hover:text-white transition">About Jefna Hameed</a></li>
                     <li><a href="#workshops" class="hover:text-white transition">Toxic Relationship Masterclass</a></li>
                     <li><a href="#counselling-services" class="hover:text-white transition">Counselling Services</a></li>
-                    <li><a href="#why-therapy" class="hover:text-white transition">Why Clinical Therapy?</a></li>
+                    <li><a href="#why-therapy" class="hover:text-white transition">Why Family Counselling?</a></li>
                     <li><a href="#testimonials" class="hover:text-white transition">Client Testimonials</a></li>
                     <li><a href="#faq" class="hover:text-white transition">Frequently Asked Questions</a></li>
                 </ul>
@@ -58,12 +58,12 @@
 
             <!-- Counselling Focus -->
             <div>
-                <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-4">Clinical Focus</h5>
+                <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-4">Counselling Focus</h5>
                 <ul class="space-y-2.5 text-xs text-stone-400">
                     <li><a href="#counselling-services" class="hover:text-white transition">Family & Couples Counselling</a></li>
-                    <li><a href="#counselling-services" class="hover:text-white transition">1-on-1 Individual Therapy</a></li>
+                    <li><a href="#counselling-services" class="hover:text-white transition">1-on-1 Personal Guidance</a></li>
                     <li><a href="#counselling-services" class="hover:text-white transition">Women's Boundary Coaching</a></li>
-                    <li><a href="#counselling-services" class="hover:text-white transition">Trauma & Narcissistic Abuse Healing</a></li>
+                    <li><a href="#counselling-services" class="hover:text-white transition">Toxic Relationship Recovery</a></li>
                     <li><a href="#counselling-services" class="hover:text-white transition">Premarital Alignment Sessions</a></li>
                 </ul>
             </div>
@@ -94,7 +94,7 @@
 
         <!-- Bottom Copyright -->
         <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-            <p>© {{ date('Y') }} Jefna Hameed. All rights reserved. Professional Clinical Psychology Practice.</p>
+            <p>© {{ date('Y') }} Jefna Hameed. All rights reserved. Professional Family Counseling & Relationship Guidance.</p>
             <div class="flex items-center gap-6">
                 <span>Privacy & Confidentiality Guaranteed</span>
                 <span>•</span>

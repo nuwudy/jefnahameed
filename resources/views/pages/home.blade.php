@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Jefna Hameed | Clinical Psychologist & Relationship Guidance')
-@section('meta_description', 'Break Free from Toxic Patterns. Reclaim Your Self-Worth. Compassionate, confidential clinical psychology and couple counselling with Jefna Hameed.')
+@section('title', 'Jefna Hameed | Family Counselor & Relationship Guidance')
+@section('meta_description', 'Break Free from Toxic Patterns. Reclaim Your Self-Worth. Compassionate, confidential family counselling and relationship guidance with Jefna Hameed.')
 
 @section('content')
 
@@ -19,7 +19,7 @@
                 <!-- Badge Pill -->
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EEF3ED] border border-[#3B4E3B]/20 text-[#3B4E3B] text-xs font-semibold tracking-wider uppercase">
                     <span class="w-2 h-2 rounded-full bg-[#3B4E3B]"></span>
-                    Clinical Psychology & Relationship Guidance
+                    Family Counseling & Relationship Guidance
                 </div>
 
                 <!-- Primary Headline -->
@@ -30,7 +30,7 @@
 
                 <!-- Subheadline with Malayalam subtle nuance -->
                 <p class="text-base sm:text-lg text-stone-700 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Empathetic, evidence-based psychological counselling and masterclasses. Helping individuals break free from emotional manipulation, set guilt-free boundaries, and rebuild thriving, peaceful relationships.
+                    Empathetic, evidence-based relationship counselling and masterclasses. Helping individuals break free from emotional manipulation, set guilt-free boundaries, and rebuild thriving, peaceful relationships.
                 </p>
                 <p class="text-xs sm:text-sm text-stone-600 font-serif italic max-w-xl mx-auto lg:mx-0 border-l-2 border-[#7A3528] pl-3 py-1">
                     "ഭാര്യയും ഭർത്താവും — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും. ശാസ്ത്രീയമായ കൗൺസിലിംഗിലൂടെ സന്തോഷമുള്ള ബന്ധങ്ങൾ കെട്ടിപ്പടുക്കാം."
@@ -57,15 +57,15 @@
                 <div class="pt-6 border-t border-stone-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 text-xs text-stone-600">
                     <div class="flex items-center gap-2">
                         <span class="text-emerald-700">🔒</span>
-                        <span>100% Patient Confidentiality</span>
+                        <span>100% Confidential Support</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-emerald-700">🌿</span>
-                        <span>Evidence-Based Clinical Frameworks</span>
+                        <span>Evidence-Based Relationship Guidance</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-emerald-700">🌍</span>
-                        <span>Online Worldwide & Kerala Clinics</span>
+                        <span>Online Worldwide & Kerala In-Person</span>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                                     </div>
                                     <div>
                                         <h3 class="font-serif text-2xl font-bold text-[#3B4E3B]">Jefna Hameed</h3>
-                                        <p class="text-xs font-semibold uppercase tracking-widest text-[#7A3528] mt-0.5">Clinical Psychologist</p>
+                                        <p class="text-xs font-semibold uppercase tracking-widest text-[#7A3528] mt-0.5">Family Counselor</p>
                                         <p class="text-xs text-stone-600 mt-1">Specialist in Relationship Healing & Family Dynamics</p>
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@
                                 🎓
                             </div>
                             <div>
-                                <p class="text-[11px] font-bold text-stone-800">M.Sc Clinical Psychology</p>
+                                <p class="text-[11px] font-bold text-stone-800">Family Counselor</p>
                                 <p class="text-[10px] text-stone-500">Certified Practitioner</p>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                 "Avoid Toxic Relationships"
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
-                A structured psychological masterclass specifically curated for women to recognize subtle emotional manipulation, establish unshakeable boundaries, and heal with confidence.
+                A structured guidance masterclass specifically curated for women to recognize subtle emotional manipulation, establish unshakeable boundaries, and heal with confidence.
             </p>
         </div>
 
@@ -235,12 +235,12 @@
         
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="badge-olive mb-3">Clinical Specializations</span>
+            <span class="badge-olive mb-3">Counselling Focus</span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#3B4E3B] tracking-tight">
-                Counselling & Psychological Services
+                Counselling & Relationship Guidance Services
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
-                Evidence-based psychotherapy tailored for couples, individuals, and families seeking emotional clarity, mutual understanding, and durable healing.
+                Evidence-based relationship counselling tailored for couples, individuals, and families seeking emotional clarity, mutual understanding, and durable healing.
             </p>
         </div>
 
@@ -300,7 +300,7 @@
 </section>
 
 
-<!-- 4. ABOUT THE PSYCHOLOGIST -->
+<!-- 4. ABOUT THE FAMILY COUNSELOR -->
 <section id="about" class="py-16 sm:py-24 bg-[#FAF8F5] border-y border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -312,16 +312,16 @@
                         JH
                     </div>
                     <h3 class="font-serif text-2xl font-bold text-[#3B4E3B]">Jefna Hameed</h3>
-                    <p class="text-xs font-semibold text-[#7A3528] uppercase tracking-wider mt-0.5">M.Sc Clinical Psychology • Family Counselor</p>
+                    <p class="text-xs font-semibold text-[#7A3528] uppercase tracking-wider mt-0.5">Family Counselor & Relationship Specialist</p>
                     
                     <div class="mt-4 pt-4 border-t border-stone-100 space-y-2.5 text-xs text-stone-600">
                         <div class="flex items-center gap-2">
                             <span class="text-emerald-700">✓</span>
-                            <span>Specialized in Relationship Trauma & Family Systems</span>
+                            <span>Specialized in Relationship Guidance & Family Systems</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-emerald-700">✓</span>
-                            <span>Certified Cognitive Behavioral Therapy (CBT) Practitioner</span>
+                            <span>Certified Cognitive & Behavioral Relationship Coach</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-emerald-700">✓</span>
@@ -334,7 +334,7 @@
                     </div>
 
                     <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
-                        <span class="text-xs text-stone-500">Kochi • Calicut • Worldwide</span>
+                        <span class="text-xs text-stone-500">Kochi • Calicut • Worldwide Online</span>
                         <a href="https://wa.me/919400000000" target="_blank" class="text-xs font-semibold text-[#3B4E3B] hover:underline flex items-center gap-1">
                             <span>Direct Inquiry</span> →
                         </a>
@@ -344,9 +344,9 @@
 
             <!-- Right Biography & Approach (7 cols) -->
             <div class="lg:col-span-7 space-y-6">
-                <span class="badge-olive">About the Psychologist</span>
+                <span class="badge-olive">About the Family Counselor</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
-                    Compassionate, Confidential & Grounded in Clinical Science
+                    Compassionate, Confidential & Practical Guidance
                 </h2>
                 
                 <!-- Prominent Blockquote Callout -->
@@ -354,14 +354,14 @@
                     <p class="font-serif text-lg sm:text-xl font-medium text-[#7A3528] italic">
                         "A healthy relationship adds value to your life, not drains you."
                     </p>
-                    <p class="text-xs text-stone-600 mt-1">— Jefna Hameed, Clinical Psychologist</p>
+                    <p class="text-xs text-stone-600 mt-1">— Jefna Hameed, Family Counselor</p>
                 </div>
 
                 <p class="text-sm text-stone-700 leading-relaxed">
-                    With extensive experience in clinical psychology and family counseling, Jefna Hameed helps individuals and couples dismantle dysfunctional patterns, heal from toxic relationships, and build emotionally secure lives.
+                    With extensive experience in family counseling and relationship guidance, Jefna Hameed helps individuals and couples dismantle dysfunctional patterns, heal from toxic dynamics, and build emotionally secure, fulfilling lives.
                 </p>
                 <p class="text-sm text-stone-700 leading-relaxed">
-                    Whether you are struggling with recurring conflicts in your marriage, recovering from manipulative dynamics, or seeking the courage to set firm personal boundaries, therapy provides a structured, non-judgmental space to gain clarity and self-respect.
+                    Whether you are struggling with recurring conflicts in your marriage, recovering from manipulative dynamics, or seeking the courage to set firm personal boundaries, counselling provides a structured, non-judgmental space to gain clarity and self-respect.
                 </p>
 
                 <!-- Core Pillars -->
@@ -382,17 +382,17 @@
 </section>
 
 
-<!-- 5. WHY CHOOSE CLINICAL THERAPY -->
+<!-- 5. WHY CHOOSE FAMILY COUNSELLING -->
 <section id="why-therapy" class="py-16 sm:py-24 bg-[#F7F3EE]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="badge-terracotta mb-3">The Clinical Difference</span>
+            <span class="badge-terracotta mb-3">The Professional Difference</span>
             <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
-                Why Professional Clinical Guidance Matters
+                Why Professional Family Counselling Matters
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
-                Why casual social media tips and well-meaning friends cannot replace structured psychological therapy.
+                Why casual social media tips and well-meaning friends cannot replace structured relationship counselling.
             </p>
         </div>
 
@@ -400,7 +400,7 @@
             <!-- Unstructured Casual Advice -->
             <div class="bg-white/80 border border-stone-200 rounded-3xl p-6 sm:p-8 space-y-4">
                 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200">
-                    ✕ Casual Advice / Unstructured Guidance
+                    ✕ Casual Advice / Unstructured Opinions
                 </div>
                 <h3 class="font-serif text-lg font-bold text-stone-800">Temporary Band-Aids</h3>
                 <ul class="space-y-3 text-xs text-stone-600">
@@ -410,33 +410,33 @@
                     </li>
                     <li class="flex items-start gap-2">
                         <span class="text-rose-500 font-bold">✕</span>
-                        <span>Superficial advice like "just compromise" without addressing underlying trauma.</span>
+                        <span>Superficial advice like "just compromise" without addressing core emotional hurts.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <span class="text-rose-500 font-bold">✕</span>
-                        <span>Normalizing emotional abuse and boundary violations under guilt or social pressure.</span>
+                        <span>Normalizing unhealthy dynamics and boundary violations under guilt or social pressure.</span>
                     </li>
                 </ul>
             </div>
 
-            <!-- Structured Clinical Therapy -->
+            <!-- Structured Family Counselling -->
             <div class="bg-[#EEF3ED]/70 border border-[#3B4E3B]/30 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
                 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#3B4E3B] text-white">
-                    ✓ Clinical Psychology with Jefna Hameed
+                    ✓ Professional Family Counselling with Jefna Hameed
                 </div>
                 <h3 class="font-serif text-lg font-bold text-[#3B4E3B]">Deep, Sustainable Transformation</h3>
                 <ul class="space-y-3 text-xs text-stone-700">
                     <li class="flex items-start gap-2">
                         <span class="text-emerald-700 font-bold">✓</span>
-                        <span>Neutral, objective psychological space where root neurological and relational triggers are resolved.</span>
+                        <span>Neutral, objective space where root communication breakdowns and triggers are resolved.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <span class="text-emerald-700 font-bold">✓</span>
-                        <span>Evidence-based CBT and systemic communication frameworks tailored to your unique dynamic.</span>
+                        <span>Evidence-based relationship and systemic communication frameworks tailored to your family dynamic.</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <span class="text-emerald-700 font-bold">✓</span>
-                        <span>Empowering you with boundaries, self-worth, and emotional autonomy that lasts a lifetime.</span>
+                        <span>Empowering you with boundaries, self-worth, and emotional clarity that lasts a lifetime.</span>
                     </li>
                 </ul>
             </div>
@@ -508,18 +508,18 @@
             <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
                 Everything You Need to Know
             </h2>
-            <p class="text-sm text-stone-600 mt-2">Clear answers about privacy, session format, and therapy outcomes.</p>
+            <p class="text-sm text-stone-600 mt-2">Clear answers about privacy, session format, and counselling outcomes.</p>
         </div>
 
         <div class="space-y-4">
             <!-- FAQ 1 -->
             <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
                 <button type="button" @click="active = (active === 1 ? null : 1)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-stone-900 hover:text-[#3B4E3B] transition">
-                    <span>Is my therapy session completely confidential?</span>
+                    <span>Is my counselling session completely confidential?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 1 ? '−' : '+'">+</span>
                 </button>
                 <div x-show="active === 1" x-collapse class="px-5 pb-5 text-xs text-stone-600 leading-relaxed border-t border-stone-100 pt-3" style="display: none;">
-                    Yes, absolutely. All therapy sessions and records adhere strictly to clinical ethical guidelines and patient confidentiality. No information or details are disclosed to family members, spouses, or third parties without your explicit written consent.
+                    Yes, absolutely. All counselling sessions and communications adhere strictly to professional ethical standards and strict confidentiality. No information or details are disclosed to family members, spouses, or third parties without your explicit consent.
                 </div>
             </div>
 
@@ -530,7 +530,7 @@
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 2 ? '−' : '+'">+</span>
                 </button>
                 <div x-show="active === 2" x-collapse class="px-5 pb-5 text-xs text-stone-600 leading-relaxed border-t border-stone-100 pt-3" style="display: none;">
-                    Yes. Clinical studies consistently prove that tele-psychology via encrypted video (Google Meet/Zoom) delivers equivalent therapeutic outcomes. It offers maximum comfort, flexible scheduling from home, and accessibility for clients worldwide (UAE, UK, US, Pan-India).
+                    Yes. Online consultations via encrypted video (Google Meet/Zoom) provide excellent results, maximum comfort, flexible scheduling from home, and seamless accessibility for clients worldwide (UAE, GCC, UK, US, Pan-India).
                 </div>
             </div>
 
@@ -541,7 +541,7 @@
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 3 ? '−' : '+'">+</span>
                 </button>
                 <div x-show="active === 3" x-collapse class="px-5 pb-5 text-xs text-stone-600 leading-relaxed border-t border-stone-100 pt-3" style="display: none;">
-                    The first session is an initial clinical intake and mapping conversation (50–60 minutes). We discuss your history, current relationship or emotional pain points, and collaboratively establish clear goals for your therapeutic roadmap.
+                    The first session is an initial intake and mapping conversation (50–60 minutes). We discuss your history, current relationship pain points or life challenges, and collaboratively establish a clear roadmap for progress.
                 </div>
             </div>
 
@@ -585,7 +585,7 @@
                     Begin Your Path to Peace & Clarity
                 </h2>
                 <p class="text-sm text-stone-700 leading-relaxed">
-                    Have questions about an upcoming workshop or looking to schedule a confidential consultation? Reach out directly via form or WhatsApp.
+                    Have questions about an upcoming workshop or looking to schedule a confidential session? Reach out directly via form or WhatsApp.
                 </p>
 
                 <div class="space-y-4 pt-2">
@@ -595,8 +595,8 @@
                         </div>
                         <div>
                             <h4 class="text-xs font-bold text-stone-900">Direct WhatsApp Inquiry</h4>
-                            <p class="text-xs text-stone-600 mt-0.5">Instant booking assistance with our clinical coordinator.</p>
-                            <a href="https://wa.me/919400000000?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20therapy%20session."
+                            <p class="text-xs text-stone-600 mt-0.5">Instant booking assistance with our coordinator.</p>
+                            <a href="https://wa.me/919400000000?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20counselling%20session."
                                target="_blank" rel="noopener noreferrer"
                                class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:underline mt-1">
                                 Chat on WhatsApp (+91 94000 00000) →
@@ -612,7 +612,7 @@
                             <h4 class="text-xs font-bold text-stone-900">Locations & Modes</h4>
                             <p class="text-xs text-stone-600 mt-0.5">
                                 • Online Video Consultations (Pan-India & Overseas)<br>
-                                • In-Person Clinical Practice (Kochi & Calicut, Kerala)
+                                • In-Person Counselling Practice (Kochi & Calicut, Kerala)
                             </p>
                         </div>
                     </div>
@@ -630,7 +630,7 @@
 
                 <!-- Emergency Disclaimer Reminder -->
                 <div class="p-4 bg-amber-50 border border-amber-200 rounded-2xl text-[11px] text-amber-900">
-                    <strong>Crisis Notice:</strong> If you are experiencing an acute psychological crisis or thoughts of self-harm, please call 24/7 national toll-free support: <strong>KIRAN 1800-599-0019</strong> or <strong>DISHA 1056</strong>.
+                    <strong>Crisis Notice:</strong> If you are experiencing an acute crisis or thoughts of self-harm, please call 24/7 national toll-free support: <strong>KIRAN 1800-599-0019</strong> or <strong>DISHA 1056</strong>.
                 </div>
             </div>
 

@@ -21,7 +21,7 @@ test('landing page loads successfully with essential branding and sections', fun
     $response->assertStatus(200);
     $response->assertSee('Jefna Hameed');
     $response->assertSee('Avoid Toxic Relationships');
-    $response->assertSee('Clinical Psychology');
+    $response->assertSee('Family Counselor');
     $response->assertSee('Family &amp; Couple Counselling', false);
 });
 
@@ -38,10 +38,10 @@ test('book consultation modal component submits and saves to database', function
         ->set('name', 'Deepa Nair')
         ->set('phone', '+919847012345')
         ->set('email', 'deepa@example.com')
-        ->set('service_type', '1-on-1 Clinical Therapy')
+        ->set('service_type', 'Family & Couple Counselling')
         ->set('preferred_slot', 'Evening (5:30 PM - 8:30 PM)')
         ->set('session_mode', 'Online (Confidential Video/Audio)')
-        ->set('message', 'Looking for individual anxiety support.')
+        ->set('message', 'Looking for individual relationship support.')
         ->call('submit')
         ->assertSet('isSuccess', true);
 

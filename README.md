@@ -1,6 +1,6 @@
-# Jefna Hameed — Clinical Psychology & Relationship Guidance Platform
+# Jefna Hameed — Family Counselor & Relationship Guidance Platform
 
-A modern, empathetic, and high-converting web platform for **Jefna Hameed** (Clinical Psychologist & Family Counselor), specialized in relationship healing, couples therapy, and women's boundary empowerment.
+A modern, empathetic, and high-converting web platform for **Jefna Hameed** (Family Counselor & Relationship Specialist), specialized in relationship healing, couples therapy, and women's boundary empowerment.
 
 - **Production Domain:** [jefnahameed.com](https://jefnahameed.com)
 - **Repository:** [https://github.com/nuwudy/jefnahameed](https://github.com/nuwudy/jefnahameed)
@@ -24,28 +24,28 @@ A modern, empathetic, and high-converting web platform for **Jefna Hameed** (Cli
 ## ✨ Features & Architecture
 
 1. **Hero Section & Brand Storytelling:**
-   - 2-column responsive layout with credential pills (*M.Sc Clinical Psychology*, *1,500+ Sessions Guided*).
+   - 2-column responsive layout with credential pills (*Family Counselor*, *1,500+ Sessions Guided*).
    - High-converting copy and Malayalam relationship nuance (*"ഭാര്യയും ഭർത്താവും — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും"*).
-   - Direct CTA triggers to book confidential consultations and explore workshops.
+   - Direct CTA triggers to book confidential sessions and explore workshops.
 
 2. **Featured Workshop / Masterclass:**
    - **"Avoid Toxic Relationships"** (A Practical Class for Women to Recognize, Avoid & Heal).
-   - 5-part clinical curriculum covering red flags, boundary scripts, trauma bonds, and self-worth.
+   - 5-part curriculum covering red flags, boundary scripts, trauma bonds, and self-worth.
    - Interactive Livewire batch selector with instant seat reservation and pre-filled WhatsApp confirmation trigger.
 
 3. **Counselling Services Grid:**
    - Family & Couple Counselling (*ഭാര്യയും ഭർത്താവും*)
-   - 1-on-1 Clinical Therapy Sessions (CBT & Acceptance-based)
+   - 1-on-1 Personal Counselling Sessions
    - Women's Personal Growth & Boundary Coaching
 
-4. **About the Psychologist:**
-   - Clinical background, approach, and prominent quote callout: *"A healthy relationship adds value to your life, not drains you."*
+4. **About the Family Counselor:**
+   - Background, approach, and prominent quote callout: *"A healthy relationship adds value to your life, not drains you."*
 
-5. **Why Choose Clinical Therapy:**
-   - Direct comparison highlighting the clinical difference between casual advice and structured evidence-based psychotherapy.
+5. **Why Choose Professional Family Counselling:**
+   - Direct comparison highlighting the professional difference between casual advice and structured relationship counselling.
 
 6. **Transformation Stories & Testimonials:**
-   - Verified patient reviews with bilingual English & Malayalam quotes and 5-star ratings.
+   - Verified client reviews with bilingual English & Malayalam quotes and 5-star ratings.
 
 7. **Interactive Livewire Components:**
    - `<livewire:book-consultation-modal />`: Modal popup for session booking with slot and mode pickers.
@@ -54,7 +54,7 @@ A modern, empathetic, and high-converting web platform for **Jefna Hameed** (Cli
    - `<livewire:newsletter-form />`: Email capture for mindful notes.
 
 8. **SEO & Accessibility:**
-   - Full Schema.org JSON-LD structured data (`MedicalBusiness`, `Psychologist`, `Course`).
+   - Full Schema.org JSON-LD structured data (`LocalBusiness`, `Person`, `Course`).
    - OpenGraph and Twitter Cards metadata.
    - Dynamic `/sitemap.xml` endpoint and `robots.txt`.
 

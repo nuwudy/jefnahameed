@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Avoid Toxic Relationships',
                 'subtitle' => 'A Practical, Psychological Masterclass for Women to Recognize Red Flags, Break Cycles & Heal',
                 'badge' => 'Live Interactive Masterclass',
-                'description' => 'A step-by-step clinical guidance workshop designed to help women recognize manipulation, set unwavering personal boundaries, recover their self-worth, and foster emotionally safe relationships.',
+                'description' => 'A step-by-step guidance workshop designed to help women recognize manipulation, set unwavering personal boundaries, recover their self-worth, and foster emotionally safe relationships.',
                 'curriculum' => [
                     [
                         'title' => 'Identifying Toxic Patterns & Subtle Red Flags',
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
                     ],
                     [
                         'title' => 'Healing from Emotional Abuse & Trauma Bonds',
-                        'desc' => 'Clinical strategies to break neurological trauma bonds and recover mental clarity and self-trust.',
+                        'desc' => 'Proven strategies to break neurological trauma bonds and recover mental clarity and self-trust.',
                     ],
                     [
                         'title' => 'Cultivating Safe & Reciprocal Connections',
@@ -93,7 +93,7 @@ class DatabaseSeeder extends Seeder
                 'client_tag' => 'Workshop Participant — Avoid Toxic Relationships',
                 'location' => 'Kochi / Online',
                 'rating' => 5,
-                'quote' => 'Jefna’s workshop opened my eyes to patterns I had normalized for years. Her empathetic, clinical breakdown of gaslighting and emotional boundaries gave me the courage to choose my mental health first.',
+                'quote' => 'Jefna’s workshop opened my eyes to patterns I had normalized for years. Her empathetic, practical breakdown of gaslighting and emotional boundaries gave me the courage to choose my peace first.',
                 'quote_ml' => 'ജെഫ്നയുടെ സെഷൻ എന്റെ ജീവിതത്തിലെ വലിയൊരു വഴിത്തിരിവായിരുന്നു. റിലേഷൻഷിപ്പിൽ അനുഭവപ്പെട്ടിരുന്ന മാനസിക ബുദ്ധിമുട്ടുകൾ തിരിച്ചറിയാനും സ്വന്തം ആത്മാഭിമാനം വീണ്ടെടുക്കാനും ഇത് എന്നെ സഹായിച്ചു.',
                 'service_category' => 'Relationship Masterclass',
                 'is_featured' => true,
@@ -101,7 +101,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'client_name' => 'Rahul & Deepa M.',
-                'client_tag' => 'Couples Therapy Client',
+                'client_tag' => 'Couples Counselling Client',
                 'location' => 'Calicut / In-Person & Online',
                 'rating' => 5,
                 'quote' => 'We were struggling with persistent miscommunication in our 4-year marriage. Jefna created a completely non-judgmental, balanced space where both of us felt heard. Our bond feels rejuvenated.',
@@ -112,12 +112,12 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'client_name' => 'Ananya K.',
-                'client_tag' => '1-on-1 Clinical Therapy Client',
+                'client_tag' => '1-on-1 Personal Counselling Client',
                 'location' => 'Dubai / Online',
                 'rating' => 5,
-                'quote' => 'Living abroad while dealing with anxiety and relationship burnout felt overwhelming. Jefna’s structured psychological approaches and warm presence made all the difference in my recovery.',
-                'quote_ml' => 'പ്രവാസജീവിതത്തിലെ സമ്മർദ്ദങ്ങളും ഉത്കണ്ഠകളും കൈകാര്യം ചെയ്യാൻ ജെഫ്നയുടെ തെറാപ്പി സെഷനുകൾ വളരെ സഹായകരമായി. മികച്ച ക്ലിനിക്കൽ ഗൈഡൻസ് ആണ് ലഭിച്ചത്.',
-                'service_category' => 'Individual Therapy',
+                'quote' => 'Living abroad while dealing with relationship burnout felt overwhelming. Jefna’s structured guidance and warm presence made all the difference in my emotional recovery.',
+                'quote_ml' => 'പ്രവാസജീവിതത്തിലെ സമ്മർദ്ദങ്ങളും വ്യക്തിജീവിതത്തിലെ ബുദ്ധിമുട്ടുകളും കൈകാര്യം ചെയ്യാൻ ജെഫ്നയുടെ കൗൺസിലിംഗ് സെഷനുകൾ വളരെ സഹായകരമായി. മികച്ച ഗൈഡൻസ് ആണ് ലഭിച്ചത്.',
+                'service_category' => 'Personal Guidance',
                 'is_featured' => true,
                 'sort_order' => 3,
             ],

@@ -14,7 +14,7 @@
                         Jefna Hameed
                     </span>
                     <span class="block text-[11px] font-medium tracking-wider text-[#7A3528] uppercase">
-                        Clinical Psychologist & Family Counselor
+                        Family Counselor & Relationship Specialist
                     </span>
                 </div>
             </a>
@@ -80,7 +80,7 @@
                     class="w-full py-3 bg-[#3B4E3B] text-white rounded-xl text-xs font-semibold uppercase tracking-wider text-center shadow-sm">
                 Book a Session
             </button>
-            <a href="https://wa.me/919400000000?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20therapy%20session."
+            <a href="https://wa.me/919400000000?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20counselling%20session."
                target="_blank" rel="noopener noreferrer"
                class="w-full py-2.5 bg-[#25D366] text-white rounded-xl text-xs font-semibold text-center flex items-center justify-center gap-2">
                 WhatsApp Inquiry
