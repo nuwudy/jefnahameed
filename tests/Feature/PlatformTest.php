@@ -136,4 +136,29 @@ test('unauthenticated users cannot access admin dashboard', function () {
     $response->assertRedirect('/login');
 });
 
+test('blog index page loads successfully and displays articles', function () {
+    $response = $this->get('/blog');
+    $response->assertStatus(200);
+    $response->assertSee('Relationship Guidance');
+    $response->assertSee('From Divorce Talks to Honeymoon Days');
+});
+
+test('blog post reader page renders article content and author bio', function () {
+    $response = $this->get('/blog/from-divorce-talks-to-honeymoon-days');
+    $response->assertStatus(200);
+    $response->assertSee('From Divorce Talks to Honeymoon Days');
+    $response->assertSee('The Three Silent Killers of Marital Intimacy');
+    $response->assertSee('Jefna Hameed');
+});
+
+test('blog list livewire component filters by category and search keyword', function () {
+    \Livewire\Livewire::test(\App\Livewire\BlogList::class)
+        ->set('category', 'Marriage Guidance')
+        ->assertSee('From Divorce Talks to Honeymoon Days')
+        ->set('category', 'all')
+        ->set('search', 'Gaslighting')
+        ->assertSee('5 Subtle Red Flags in Toxic Relationships');
+});
+
+
 

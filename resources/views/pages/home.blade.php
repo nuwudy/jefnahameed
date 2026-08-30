@@ -635,9 +635,67 @@
     </div>
 </section>
 
+<!-- 6.7 LATEST CLINICAL ARTICLES & BLOG SECTION -->
+@if(isset($recentPosts) && $recentPosts->isNotEmpty())
+<section id="blog-insights" class="py-16 sm:py-24 bg-[#FCFAF7] border-t border-[#E8DFD3]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div class="max-w-2xl">
+                <span class="badge-gold mb-2">📖 Clinical Insights &amp; Notes</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
+                    Relationship Guidance Articles
+                </h2>
+                <p class="text-sm text-stone-600 mt-2">
+                    Evidence-based articles on resolving marital crisis, boundary setting, and emotional recovery.
+                </p>
+            </div>
+            <a href="{{ route('blog.index') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-stone-50 text-[#54321A] border border-[#DFB254]/40 font-semibold text-xs rounded-xl shadow-xs transition shrink-0">
+                <span>View All Articles</span> →
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            @foreach($recentPosts as $post)
+                <article class="bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between card-hover-lift group">
+                    <div>
+                        <div class="relative aspect-[16/10] bg-stone-100 overflow-hidden">
+                            <a href="{{ route('blog.show', $post->slug) }}">
+                                <img src="{{ $post->display_image }}" alt="{{ $post->title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                            </a>
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-[#54321A]/90 text-[#FAF6F0] border border-[#DFB254]/30">
+                                {{ $post->category }}
+                            </span>
+                            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-black/60 text-white">
+                                ⏱️ {{ $post->read_time }}
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-[10px] text-stone-400 font-medium mb-1.5">
+                                {{ $post->published_at ? $post->published_at->format('M d, Y') : $post->created_at->format('M d, Y') }}
+                            </div>
+                            <h4 class="font-serif text-base font-bold text-[#54321A] group-hover:text-[#8B3846] transition leading-snug line-clamp-2">
+                                <a href="{{ route('blog.show', $post->slug) }}">{{ $post->title }}</a>
+                            </h4>
+                            <p class="text-xs text-stone-600 mt-2 line-clamp-2 leading-relaxed">
+                                {{ $post->excerpt }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 border-t border-stone-100 flex items-center justify-between text-xs">
+                        <span class="text-stone-400">By Jefna Hameed</span>
+                        <a href="{{ route('blog.show', $post->slug) }}" class="font-bold text-[#8B3846] hover:text-[#54321A] transition inline-flex items-center gap-1">
+                            <span>Read Article</span> →
+                        </a>
+                    </div>
+                </article>
+            @endforeach
+        </div>
+    </div>
+</section>
+@endif
 
 <!-- 7. INTERACTIVE FAQ ACCORDION -->
-<section id="faq" class="py-16 sm:py-24 bg-[#FCFAF7]">
+<section id="faq" class="py-16 sm:py-24 bg-[#FAF6F0]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" x-data="{ active: null }">
         
         <div class="text-center mb-14">

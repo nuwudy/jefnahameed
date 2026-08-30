@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use App\Models\Testimonial;
 use App\Models\Workshop;
 use Illuminate\Http\Request;
@@ -21,6 +22,8 @@ class HomeController extends Controller
         $testimonials = Testimonial::where('is_featured', true)
             ->orderBy('sort_order', 'asc')
             ->get();
+
+        $recentPosts = Post::published()->take(3)->get();
 
         $services = [
             [
@@ -70,6 +73,6 @@ class HomeController extends Controller
             ]
         ];
 
-        return view('pages.home', compact('featuredWorkshop', 'allWorkshops', 'testimonials', 'services'));
+        return view('pages.home', compact('featuredWorkshop', 'allWorkshops', 'testimonials', 'services', 'recentPosts'));
     }
 }

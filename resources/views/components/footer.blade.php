@@ -50,13 +50,13 @@
             <div>
                 <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-4">Quick Links</h5>
                 <ul class="space-y-2.5 text-xs text-stone-400">
-                    <li><a href="#about" class="hover:text-[#DFB254] transition">About Jefna Hameed</a></li>
-                    <li><a href="#workshops" class="hover:text-[#DFB254] transition">Toxic Relationship Masterclass</a></li>
-                    <li><a href="#counselling-services" class="hover:text-[#DFB254] transition">Counselling Services</a></li>
-                    <li><a href="#why-therapy" class="hover:text-[#DFB254] transition">Why Family Counselling?</a></li>
-                    <li><a href="{{ route('media.index') }}" class="hover:text-[#DFB254] transition">Media & Video Gallery</a></li>
-                    <li><a href="#testimonials" class="hover:text-[#DFB254] transition">Client Testimonials</a></li>
-                    <li><a href="#faq" class="hover:text-[#DFB254] transition">Frequently Asked Questions</a></li>
+                    <li><a href="{{ route('home') }}#about" class="hover:text-[#DFB254] transition">About Jefna Hameed</a></li>
+                    <li><a href="{{ route('home') }}#workshops" class="hover:text-[#DFB254] transition">Toxic Relationship Masterclass</a></li>
+                    <li><a href="{{ route('home') }}#counselling-services" class="hover:text-[#DFB254] transition">Counselling Services</a></li>
+                    <li><a href="{{ route('blog.index') }}" class="hover:text-[#DFB254] transition">Relationship Blog &amp; Insights</a></li>
+                    <li><a href="{{ route('media.index') }}" class="hover:text-[#DFB254] transition">Media &amp; Video Gallery</a></li>
+                    <li><a href="{{ route('home') }}#testimonials" class="hover:text-[#DFB254] transition">Client Stories</a></li>
+                    <li><a href="{{ route('home') }}#faq" class="hover:text-[#DFB254] transition">Frequently Asked Questions</a></li>
                 </ul>
             </div>
 

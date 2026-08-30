@@ -21,19 +21,17 @@
             </a>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center gap-7">
-                <a href="#about" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">About</a>
-                <a href="#workshops" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition flex items-center gap-1.5">
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="{{ route('home') }}#about" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">About</a>
+                <a href="{{ route('home') }}#workshops" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition flex items-center gap-1.5">
                     <span>Workshops</span>
                     <span class="inline-flex px-1.5 py-0.5 text-[10px] font-semibold bg-[#FAECF0] text-[#8B3846] rounded-full border border-[#8B3846]/20">New</span>
                 </a>
-                <a href="#counselling-services" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Counselling Services</a>
-                <a href="#why-therapy" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Approach</a>
-                <a href="{{ route('media.index') }}" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition flex items-center gap-1">
-                    <span>Media & Gallery</span>
-                </a>
-                <a href="#testimonials" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Stories</a>
-                <a href="#contact" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Contact</a>
+                <a href="{{ route('home') }}#counselling-services" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Services</a>
+                <a href="{{ route('blog.index') }}" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Blog &amp; Insights</a>
+                <a href="{{ route('media.index') }}" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Gallery</a>
+                <a href="{{ route('home') }}#testimonials" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Stories</a>
+                <a href="{{ route('home') }}#contact" class="text-sm font-medium text-stone-700 hover:text-[#54321A] transition">Contact</a>
             </nav>
 
             <!-- Action CTAs -->
@@ -72,13 +70,13 @@
          x-transition:leave-end="opacity-0 -translate-y-2"
          class="md:hidden bg-[#FCFAF7] border-b border-[#E8DFD3] px-5 pt-3 pb-6 space-y-3 shadow-lg"
          style="display: none;">
-        <a href="#about" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">About Jefna Hameed</a>
-        <a href="#workshops" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Programs & Masterclasses</a>
-        <a href="#counselling-services" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Counselling Services</a>
-        <a href="#why-therapy" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Our Approach</a>
-        <a href="{{ route('media.index') }}" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Media & Video Gallery</a>
-        <a href="#testimonials" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Client Stories</a>
-        <a href="#contact" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Contact & Location</a>
+        <a href="{{ route('home') }}#about" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">About Jefna Hameed</a>
+        <a href="{{ route('home') }}#workshops" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Programs &amp; Masterclasses</a>
+        <a href="{{ route('home') }}#counselling-services" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Counselling Services</a>
+        <a href="{{ route('blog.index') }}" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Blog &amp; Insights</a>
+        <a href="{{ route('media.index') }}" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Media &amp; Gallery</a>
+        <a href="{{ route('home') }}#testimonials" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Client Stories</a>
+        <a href="{{ route('home') }}#contact" @click="mobileMenuOpen = false" class="block py-2 text-sm font-medium text-stone-800 hover:text-[#54321A]">Contact &amp; Location</a>
         <div class="pt-3 border-t border-stone-200 flex flex-col gap-2">
             <button type="button"
                     @click="mobileMenuOpen = false; $dispatch('open-booking-modal')"
