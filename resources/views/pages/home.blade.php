@@ -183,25 +183,50 @@
             </p>
         </div>
 
-        <!-- Masterclass Video Feature Card -->
-        <div class="max-w-3xl mx-auto mb-12">
-            <div class="relative rounded-3xl bg-[#FCFAF7] border-2 border-[#DFB254]/40 p-2.5 sm:p-3 shadow-xl overflow-hidden ambient-warm-glow">
-                <div class="relative aspect-video rounded-2xl overflow-hidden bg-stone-900 shadow-inner">
-                    <video controls
-                           playsinline
-                           preload="metadata"
-                           poster="{{ asset('images/gallery/loving-family-home.webp') }}"
-                           class="w-full h-full object-cover">
-                        <source src="https://jefnahameed.com/storage/media/KEPOXo48Wg7hLqhmE0biDVcPfmBLVnoyNBeUEI1Y.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="px-3 pt-2.5 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-stone-600">
-                    <span class="font-medium flex items-center gap-1.5 text-[#54321A]">
-                        <span class="text-rose-500">🎬</span>
-                        <span>Watch: <strong>Insights from Jefna Hameed on Family &amp; Relationship Harmony</strong></span>
-                    </span>
-                    <span class="text-[#8B3846] font-semibold">സ്നേഹം മനസ്സിലാക്കുമ്പോൾ 🌹</span>
+        <!-- Masterclass Video Feature Card (Full Cinema Spotlight) -->
+        <div class="max-w-3xl mx-auto mb-12 bg-[#FCFAF7] border-2 border-[#DFB254]/40 rounded-3xl p-4 sm:p-6 shadow-xl space-y-4">
+            <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#54321A] text-[#FAF6F0] border border-[#DFB254]/40 shadow-xs">
+                    <span class="text-rose-400 animate-pulse">●</span>
+                    <span>Featured Video Message</span>
+                </span>
+                <span class="text-xs text-stone-500 font-medium">Jefna Hameed</span>
+            </div>
+
+            <!-- Video Frame with Native HTML5 Controls & Poster -->
+            <div class="relative aspect-video rounded-2xl overflow-hidden bg-stone-900 shadow-inner border border-stone-800">
+                <video controls
+                       playsinline
+                       preload="metadata"
+                       poster="{{ asset('images/gallery/loving-family-home.webp') }}"
+                       class="w-full h-full object-cover">
+                    <source src="https://jefnahameed.com/storage/media/KEPOXo48Wg7hLqhmE0biDVcPfmBLVnoyNBeUEI1Y.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Video Caption, Malayalam Highlight & Action Buttons -->
+            <div class="space-y-2 pt-1">
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#54321A] leading-tight">
+                    Family Matters — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും 🌹
+                </h3>
+                <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                    A personal talk from family counselor Jefna Hameed on the real foundation of marriage: active listening, emotional safety, and resolving hidden miscommunication before it harms the home.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center gap-3">
+                    <button type="button"
+                            @click="$dispatch('open-booking-modal')"
+                            class="px-5 py-2.5 bg-[#54321A] hover:bg-[#3B2110] text-[#FAF6F0] font-semibold text-xs rounded-xl shadow-xs transition cursor-pointer border border-[#DFB254]/40">
+                        Book Session with Jefna 💍
+                    </button>
+                    <a href="https://wa.me/918590415943?text=Hello%20Jefna,%20I%20watched%20your%20Family%20Matters%20video%20on%20your%20website%20and%20would%20like%20guidance."
+                       target="_blank"
+                       class="px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs rounded-xl shadow-xs transition flex items-center gap-1.5">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>Inquire on WhatsApp</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -558,116 +583,6 @@
             @endforeach
         </div>
 
-    </div>
-</section>
-
-
-<!-- 6.5 MEDIA & VIDEO HIGHLIGHTS -->
-<section id="media-preview" class="py-16 sm:py-24 bg-[#FAF6F0] border-t border-[#E8DFD3]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-            <div class="max-w-2xl">
-                <span class="badge-rose mb-2">🎬 Media & Video Insights</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
-                    Workshop Highlights & Guidance Talks
-                </h2>
-                <p class="text-sm text-stone-600 mt-2">
-                    Glimpses into our live interactive cohorts, relationship masterclasses, and practical psychology frameworks.
-                </p>
-            </div>
-            <a href="{{ route('media.index') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-stone-50 text-[#54321A] border border-[#DFB254]/40 font-semibold text-xs rounded-xl shadow-xs transition shrink-0">
-                <span>View Full Media Library (Photos & Videos)</span> →
-            </a>
-        </div>
-
-        <!-- Spotlight Video + Transformation Cards Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
-            <!-- Left: Featured Spotlight Video Player (7 Cols) -->
-            <div class="lg:col-span-7 bg-[#FCFAF7] border-2 border-[#DFB254]/40 rounded-3xl p-4 sm:p-6 shadow-xl space-y-4">
-                <div class="flex items-center justify-between">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#54321A] text-[#FAF6F0] border border-[#DFB254]/40 shadow-xs">
-                        <span class="text-rose-400 animate-pulse">●</span>
-                        <span>Featured Video Message</span>
-                    </span>
-                    <span class="text-xs text-stone-500 font-medium">Jefna Hameed</span>
-                </div>
-
-                <!-- Video Frame with Native HTML5 Controls & Poster -->
-                <div class="relative aspect-video rounded-2xl overflow-hidden bg-stone-900 shadow-inner border border-stone-800">
-                    <video controls
-                           playsinline
-                           preload="metadata"
-                           poster="{{ asset('images/gallery/kerala-muslim-family-home.webp') }}"
-                           class="w-full h-full object-cover">
-                        <source src="https://jefnahameed.com/storage/media/KEPOXo48Wg7hLqhmE0biDVcPfmBLVnoyNBeUEI1Y.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Video Caption & Malayalam Highlight -->
-                <div class="space-y-2 pt-1">
-                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#54321A] leading-tight">
-                        Family Matters — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും 🌹
-                    </h3>
-                    <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                        A personal talk from family counselor Jefna Hameed on the real foundation of marriage: active listening, emotional safety, and resolving hidden miscommunication before it harms the home.
-                    </p>
-                    <div class="pt-2 flex flex-wrap items-center gap-3">
-                        <button type="button"
-                                @click="$dispatch('open-booking-modal')"
-                                class="px-5 py-2.5 bg-[#54321A] hover:bg-[#3B2110] text-[#FAF6F0] font-semibold text-xs rounded-xl shadow-xs transition cursor-pointer">
-                            Book Session with Jefna 💍
-                        </button>
-                        <a href="https://wa.me/918590415943?text=Hello%20Jefna,%20I%20watched%20your%20Family%20Matters%20video%20on%20your%20website%20and%20would%20like%20guidance."
-                           target="_blank"
-                           class="px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs rounded-xl shadow-xs transition flex items-center gap-1.5">
-                            <span>Inquire on WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right: 2 Transformation Story Cards (5 Cols) -->
-            <div class="lg:col-span-5 space-y-6">
-                <!-- Card 1: Family Court to Reclaimed Bond -->
-                <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row lg:flex-col card-hover-lift">
-                    <div class="relative aspect-[16/9] sm:aspect-square sm:w-48 lg:w-full lg:aspect-[16/9] bg-stone-100 overflow-hidden shrink-0">
-                        <img src="{{ asset('images/gallery/family-court-reconciliation.webp') }}" alt="From Family Court to Restored Marriage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#54321A]/90 text-[#FAF6F0] border border-[#DFB254]/30">💍 Reclaimed Bond</span>
-                    </div>
-                    <div class="p-5 flex flex-col justify-between flex-1">
-                        <div>
-                            <span class="text-[10px] font-bold text-[#8B3846] uppercase">Marriage Transformation</span>
-                            <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">From Divorce Talks to Honeymoon Days</h4>
-                            <p class="text-xs text-stone-600 mt-1.5 line-clamp-2">Reconciled couple walking out of Kerala Family Court reunited in peace.</p>
-                        </div>
-                        <a href="{{ route('media.index') }}" class="text-xs font-bold text-[#8B3846] hover:underline mt-3 inline-flex items-center gap-1">
-                            <span>Explore Full Gallery</span> →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 2: Sunset Intimacy Honeymoon Days -->
-                <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row lg:flex-col card-hover-lift">
-                    <div class="relative aspect-[16/9] sm:aspect-square sm:w-48 lg:w-full lg:aspect-[16/9] bg-stone-100 overflow-hidden shrink-0">
-                        <img src="{{ asset('images/gallery/houseboat-honeymoon-backwaters.webp') }}" alt="Backwater Houseboat Honeymoon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#8B3846] text-[#FAF6F0]">⛵ Backwater Honeymoon</span>
-                    </div>
-                    <div class="p-5 flex flex-col justify-between flex-1">
-                        <div>
-                            <span class="text-[10px] font-bold text-[#8B3846] uppercase">Intimacy &amp; Healing</span>
-                            <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Kerala Backwater Houseboat Reconnection</h4>
-                            <p class="text-xs text-stone-600 mt-1.5 line-clamp-2">Rediscovering laughter and honeymoon romance through structured counseling.</p>
-                        </div>
-                        <a href="{{ route('media.index') }}" class="text-xs font-bold text-[#8B3846] hover:underline mt-3 inline-flex items-center gap-1">
-                            <span>View All 8 Moments</span> →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 </section>
 
