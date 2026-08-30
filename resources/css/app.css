@@ -10,21 +10,35 @@
     --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', Times, serif;
     --font-malayalam: 'Noto Serif Malayalam', 'Manjari', sans-serif;
 
-    --color-linen: #F7F3EE;
-    --color-linen-dark: #EFE9E0;
-    --color-olive: #3B4E3B;
-    --color-olive-dark: #2A382A;
-    --color-olive-light: #4E654E;
-    --color-olive-soft: #EEF3ED;
-    --color-terracotta: #7A3528;
-    --color-terracotta-dark: #60281E;
-    --color-terracotta-light: #964435;
-    --color-terracotta-soft: #FAF0EE;
+    /* Honeymoon & Boutique Resort Warm Palette */
+    --color-linen: #FAF6F0;
+    --color-linen-dark: #F2EAE0;
+    --color-champagne: #FBF8F2;
+    --color-travertine: #F5EFEB;
+    
+    /* Warm Walnut & Teak Wood Primary */
+    --color-walnut: #54321A;
+    --color-walnut-dark: #3B2110;
+    --color-walnut-light: #6E4325;
+    --color-walnut-soft: #F5EEE6;
+    
+    /* Warm Gold & Amber Honey Highlights */
+    --color-gold: #C29336;
+    --color-gold-dark: #A37722;
+    --color-gold-light: #DFB254;
+    --color-gold-soft: #FAF3E0;
+
+    /* Romantic Rose Wine & Terracotta Accents */
+    --color-rosewood: #8B3846;
+    --color-rosewood-dark: #6C2430;
+    --color-rosewood-light: #AB4E5E;
+    --color-rosewood-soft: #FAECF0;
+
     --color-surface: #FFFFFF;
-    --color-surface-soft: #FAF8F5;
-    --color-border-brand: #E4DDD3;
-    --color-ink: #222222;
-    --color-muted: #5A6258;
+    --color-surface-soft: #FCFAF7;
+    --color-border-brand: #E8DFD3;
+    --color-ink: #261B14;
+    --color-muted: #6B5D52;
 }
 
 @layer base {
@@ -36,29 +50,60 @@
     }
 
     ::selection {
-        background-color: #3B4E3B;
-        color: #FFFFFF;
+        background-color: #54321A;
+        color: #FAF6F0;
     }
 }
 
-/* Custom Utilities for Premium Aesthetics */
+/* Custom Utilities for Honeymoon Aesthetics */
 .glass-panel {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(228, 221, 211, 0.8);
+    background: rgba(255, 253, 250, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(212, 175, 55, 0.22);
 }
 
 .glass-dark {
-    background: rgba(43, 58, 43, 0.88);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(78, 101, 78, 0.4);
+    background: rgba(43, 27, 16, 0.90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(194, 147, 54, 0.35);
 }
 
-.botanical-pattern {
-    background-image: radial-gradient(rgba(59, 78, 59, 0.06) 1px, transparent 1px);
-    background-size: 24px 24px;
+.honeymoon-glow {
+    background-image: radial-gradient(circle at 50% 0%, rgba(223, 178, 84, 0.15), transparent 70%);
+}
+
+.ambient-warm-glow {
+    box-shadow: 0 20px 45px -12px rgba(194, 147, 54, 0.22);
+}
+
+.badge-gold {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #8C651A;
+    background-color: #FAF2DE;
+    border-radius: 9999px;
+    border: 1px solid rgba(194, 147, 54, 0.28);
+}
+
+.badge-rose {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #8B3846;
+    background-color: #FAECF0;
+    border-radius: 9999px;
+    border: 1px solid rgba(139, 56, 70, 0.22);
 }
 
 .badge-olive {
@@ -69,10 +114,10 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #3B4E3B;
-    background-color: #EEF3ED;
+    color: #54321A;
+    background-color: #F5EEE6;
     border-radius: 9999px;
-    border: 1px solid rgba(59, 78, 59, 0.15);
+    border: 1px solid rgba(84, 50, 26, 0.18);
 }
 
 .badge-terracotta {
@@ -83,17 +128,17 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #7A3528;
-    background-color: #FAF0EE;
+    color: #8B3846;
+    background-color: #FAECF0;
     border-radius: 9999px;
-    border: 1px solid rgba(122, 53, 40, 0.18);
+    border: 1px solid rgba(139, 56, 70, 0.2);
 }
 
-/* Card hover soft lifts */
+/* Card hover soft lifts with warm ambient drop shadow */
 .card-hover-lift {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-hover-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 32px -8px rgba(59, 78, 59, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px -10px rgba(84, 50, 26, 0.12), 0 0 20px rgba(223, 178, 84, 0.1);
 }

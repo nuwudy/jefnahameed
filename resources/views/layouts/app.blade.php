@@ -69,7 +69,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
-<body class="bg-[#F7F3EE] text-[#222222] font-sans antialiased min-h-screen flex flex-col selection:bg-[#3B4E3B] selection:text-white">
+<body class="bg-[#FAF6F0] text-[#261B14] font-sans antialiased min-h-screen flex flex-col selection:bg-[#54321A] selection:text-[#FAF6F0]">
     <!-- Top Emergency Helpline Strip -->
     <x-emergency-banner />
 

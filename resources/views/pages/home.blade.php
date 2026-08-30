@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Jefna Hameed | Family Counselor & Relationship Guidance')
-@section('meta_description', 'Break Free from Toxic Patterns. Reclaim Your Self-Worth. Compassionate, confidential family counselling and relationship guidance with Jefna Hameed.')
+@section('title', 'Jefna Hameed | Family Counselor & Marriage Guidance')
+@section('meta_description', 'From Divorce Talks to Honeymoon Days: Reclaim Your Marriage. Compassionate, confidential family counselling and marriage guidance with Jefna Hameed.')
 
 @section('content')
 
 <!-- 1. HERO SECTION -->
-<section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 botanical-pattern">
-    <!-- Subtle Ambient Glows -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#3B4E3B]/5 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-[#7A3528]/5 rounded-full blur-3xl pointer-events-none"></div>
+<section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 honeymoon-glow">
+    <!-- Subtle Ambient Warm Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-[#DFB254]/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[350px] h-[350px] bg-[#8B3846]/8 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -17,34 +17,33 @@
             <!-- Left Copy Column (7 cols) -->
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                 <!-- Badge Pill -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EEF3ED] border border-[#3B4E3B]/20 text-[#3B4E3B] text-xs font-semibold tracking-wider uppercase">
-                    <span class="w-2 h-2 rounded-full bg-[#3B4E3B]"></span>
-                    Relationship Transformation by Jefna Hameed
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF2DE] border border-[#DFB254]/40 text-[#8C651A] text-xs font-semibold tracking-wider uppercase shadow-xs">
+                    <span class="text-sm">💍</span>
+                    <span>Relationship Transformation by Jefna Hameed</span>
+                    <span class="text-xs text-[#C29336]">✨</span>
                 </div>
 
                 <!-- Primary Headline -->
-                <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#3B4E3B] tracking-tight leading-[1.15]">
+                <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#54321A] tracking-tight leading-[1.15]">
                     From Divorce Talks to Honeymoon Days: <br class="hidden sm:inline" />
-                    <span class="italic font-normal text-[#7A3528]">Reclaim Your Marriage.</span>
+                    <span class="italic font-normal text-[#8B3846]">Reclaim Your Marriage.</span>
                 </h1>
 
                 <!-- Subheadline with Malayalam subtle nuance -->
                 <p class="text-base sm:text-lg text-stone-700 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
                     Break the toxic cycles, heal hidden resentment, and restore true emotional intimacy through targeted, confidential clinical guidance.
                 </p>
-                <p class="text-xs sm:text-sm text-stone-600 font-serif italic max-w-xl mx-auto lg:mx-0 border-l-2 border-[#7A3528] pl-3 py-1">
-                    "ഭാര്യയും ഭർത്താവും — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും. ശാസ്ത്രീയമായ കൗൺസിലിംഗിലൂടെ സന്തോഷമുള്ള ബന്ധങ്ങൾ കെട്ടിപ്പടുക്കാം."
+                <p class="text-xs sm:text-sm text-[#6B4226] font-serif italic max-w-xl mx-auto lg:mx-0 border-l-2 border-[#8B3846] pl-3 py-1 bg-white/40 rounded-r-xl">
+                    "ഭാര്യയും ഭർത്താവും — സ്നേഹം മനസ്സിലാക്കുമ്പോൾ ജീവിതം മനോഹരമാവും. ശാസ്ത്രീയമായ കൗൺസിലിംഗിലൂടെ സന്തോഷമുള്ള ബന്ധങ്ങൾ കെട്ടിപ്പടുക്കാം." 🌹
                 </p>
 
                 <!-- CTA Action Buttons -->
                 <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                     <button type="button"
                             @click="$dispatch('open-booking-modal')"
-                            class="w-full sm:w-auto px-8 py-4 bg-[#3B4E3B] hover:bg-[#2A382A] text-white font-medium text-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer">
+                            class="w-full sm:w-auto px-8 py-4 bg-[#54321A] hover:bg-[#3B2110] text-[#FAF6F0] font-medium text-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer border border-[#DFB254]/40">
                         <span>Book a Confidential Session</span>
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
+                        <span class="text-amber-300">✨</span>
                     </button>
                     <a href="https://wa.me/918590415943?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20confidential%20marriage%20guidance%20session."
                        target="_blank"
@@ -58,17 +57,17 @@
                 </div>
 
                 <!-- Trust Badges Strip -->
-                <div class="pt-6 border-t border-stone-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 text-xs text-stone-600">
+                <div class="pt-6 border-t border-[#E8DFD3] flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 text-xs text-stone-600">
                     <div class="flex items-center gap-2">
-                        <span class="text-emerald-700">🔒</span>
+                        <span class="text-[#C29336]">🔒</span>
                         <span>100% Confidential Support</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <span class="text-emerald-700">🌿</span>
-                        <span>Evidence-Based Relationship Guidance</span>
+                        <span class="text-[#8B3846]">💞</span>
+                        <span>Compassionate Marriage Healing</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <span class="text-emerald-700">🌍</span>
+                        <span class="text-[#54321A]">🌍</span>
                         <span>Online Worldwide & Kerala In-Person</span>
                     </div>
                 </div>
@@ -77,8 +76,8 @@
             <!-- Right Visual Portrait Presentation Column (5 cols) -->
             <div class="lg:col-span-5 relative">
                 <div class="relative mx-auto max-w-md lg:max-w-none">
-                    <!-- Main Card Frame -->
-                    <div class="relative rounded-3xl bg-[#FAF8F5] border border-stone-200 p-3.5 shadow-2xl overflow-hidden group">
+                    <!-- Main Card Frame with Warm Ambient Glow -->
+                    <div class="relative rounded-3xl bg-[#FCFAF7] border border-[#DFB254]/30 p-3.5 shadow-2xl overflow-hidden group ambient-warm-glow">
                         <div class="relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden bg-stone-100 shadow-inner">
                             <!-- Real Portrait Photo -->
                             <img src="{{ asset('images/jefna-hameed.jpg') }}"
@@ -86,34 +85,37 @@
                                  class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                                  loading="eager">
                             
-                            <!-- Soft Gradient Overlay for Legibility -->
-                            <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#2A382A]/90 via-[#2A382A]/40 to-transparent flex items-end p-5">
+                            <!-- Soft Warm Gradient Overlay for Legibility -->
+                            <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#3B2110]/95 via-[#54321A]/50 to-transparent flex items-end p-5">
                                 <div>
-                                    <h3 class="font-serif text-xl font-bold text-white leading-tight">Jefna Hameed</h3>
-                                    <p class="text-xs font-medium text-emerald-200 tracking-wide uppercase mt-0.5">Family Counselor & Relationship Specialist</p>
+                                    <h3 class="font-serif text-xl font-bold text-[#FAF6F0] leading-tight flex items-center gap-2">
+                                        <span>Jefna Hameed</span>
+                                        <span class="text-xs text-amber-300">✨</span>
+                                    </h3>
+                                    <p class="text-xs font-medium text-[#DFB254] tracking-wide uppercase mt-0.5">Family Counselor & Relationship Specialist</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Floating Credential Card - Top Left -->
-                        <div class="absolute top-6 left-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-stone-200/90 flex items-center gap-2.5">
-                            <div class="w-7 h-7 rounded-full bg-[#FAF0EE] text-[#7A3528] flex items-center justify-center text-xs font-bold">
-                                🎓
+                        <div class="absolute top-6 left-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-[#DFB254]/40 flex items-center gap-2.5">
+                            <div class="w-7 h-7 rounded-full bg-[#FAF2DE] text-[#8C651A] flex items-center justify-center text-xs font-bold">
+                                💍
                             </div>
                             <div>
-                                <p class="text-[11px] font-bold text-stone-800 leading-tight">Family Counselor</p>
+                                <p class="text-[11px] font-bold text-[#54321A] leading-tight">Marriage Counselor</p>
                                 <p class="text-[10px] text-stone-500">Certified Practitioner</p>
                             </div>
                         </div>
 
                         <!-- Floating Stats Card - Bottom Right -->
-                        <div class="absolute bottom-6 right-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-stone-200/90 flex items-center gap-2.5">
-                            <div class="w-7 h-7 rounded-full bg-[#EEF3ED] text-[#3B4E3B] flex items-center justify-center text-xs font-bold">
-                                ⭐
+                        <div class="absolute bottom-6 right-6 glass-panel px-3.5 py-2 rounded-2xl shadow-lg border border-[#DFB254]/40 flex items-center gap-2.5">
+                            <div class="w-7 h-7 rounded-full bg-[#FAECF0] text-[#8B3846] flex items-center justify-center text-xs font-bold">
+                                💞
                             </div>
                             <div>
-                                <p class="text-[11px] font-bold text-stone-800 leading-tight">1,500+ Sessions</p>
-                                <p class="text-[10px] text-stone-500">Empathetic Guidance</p>
+                                <p class="text-[11px] font-bold text-[#54321A] leading-tight">1,500+ Couples</p>
+                                <p class="text-[10px] text-stone-500">Restored Harmony</p>
                             </div>
                         </div>
                     </div>
@@ -126,13 +128,13 @@
 
 
 <!-- 2. FEATURED MASTERCLASS SECTION -->
-<section id="workshops" class="py-16 sm:py-24 bg-[#FAF8F5] border-y border-stone-200">
+<section id="workshops" class="py-16 sm:py-24 bg-[#FCFAF7] border-y border-[#E8DFD3]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-14">
-            <span class="badge-terracotta mb-3">Live Interactive Masterclass</span>
-            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#3B4E3B] tracking-tight">
+            <span class="badge-rose mb-3">🌹 Live Interactive Masterclass</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#54321A] tracking-tight">
                 "Avoid Toxic Relationships"
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
@@ -141,27 +143,27 @@
         </div>
 
         <!-- Featured Card Container -->
-        <div class="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-10 shadow-md">
+        <div class="bg-white border border-[#DFB254]/30 rounded-3xl p-6 sm:p-10 shadow-lg">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
                 
                 <!-- Left: Workshop Details & Curriculum (7 cols) -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="flex flex-wrap items-center gap-3">
-                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#EEF3ED] text-[#3B4E3B]">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#FAF2DE] text-[#8C651A] border border-[#DFB254]/30">
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                             2.5 Hours Live + 30 Mins Confidential Q&A
                         </span>
-                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-stone-100 text-stone-700">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#F5EEE6] text-[#54321A]">
                             🌐 Malayalam & English (Bilingual)
                         </span>
-                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#FAF0EE] text-[#7A3528]">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#FAECF0] text-[#8B3846]">
                             💻 Live Private Zoom
                         </span>
                     </div>
 
-                    <h3 class="font-serif text-2xl font-bold text-stone-900">
+                    <h3 class="font-serif text-2xl font-bold text-[#54321A]">
                         What You Will Master in this Masterclass:
                     </h3>
 
@@ -169,12 +171,12 @@
                     <div class="space-y-4">
                         @if(!empty($featuredWorkshop->curriculum))
                             @foreach($featuredWorkshop->curriculum as $index => $item)
-                                <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#FAF8F5] border border-stone-200/60 transition hover:border-[#3B4E3B]/30">
-                                    <div class="w-7 h-7 rounded-xl bg-[#3B4E3B] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                                <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#FCFAF7] border border-[#E8DFD3] transition hover:border-[#C29336]">
+                                    <div class="w-7 h-7 rounded-xl bg-[#54321A] text-[#FAF6F0] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 shadow-xs">
                                         {{ $index + 1 }}
                                     </div>
                                     <div>
-                                        <h4 class="text-sm font-semibold text-stone-900">{{ $item['title'] }}</h4>
+                                        <h4 class="text-sm font-semibold text-[#54321A]">{{ $item['title'] }}</h4>
                                         <p class="text-xs text-stone-600 mt-0.5 leading-relaxed">{{ $item['desc'] }}</p>
                                     </div>
                                 </div>
@@ -185,21 +187,21 @@
                     </div>
 
                     <!-- Takeaways / Bonuses -->
-                    <div class="pt-4 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-stone-700">
+                    <div class="pt-4 border-t border-[#E8DFD3] grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-stone-700">
                         <div class="flex items-center gap-2">
-                            <span class="text-[#3B4E3B] font-bold">✓</span>
+                            <span class="text-[#C29336] font-bold">✓</span>
                             <span>Downloadable Boundary Script Cheatsheet</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="text-[#3B4E3B] font-bold">✓</span>
+                            <span class="text-[#C29336] font-bold">✓</span>
                             <span>Confidential Anonymous Q&A Session</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="text-[#3B4E3B] font-bold">✓</span>
+                            <span class="text-[#C29336] font-bold">✓</span>
                             <span>Lifetime Self-Worth Recovery Guide</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="text-[#3B4E3B] font-bold">✓</span>
+                            <span class="text-[#C29336] font-bold">✓</span>
                             <span>Certificate of Attendance</span>
                         </div>
                     </div>
@@ -220,14 +222,14 @@
 
 
 <!-- 3. COUNSELLING & SERVICES GRID -->
-<section id="counselling-services" class="py-16 sm:py-24 bg-[#F7F3EE]">
+<section id="counselling-services" class="py-16 sm:py-24 bg-[#FAF6F0]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="badge-olive mb-3">Counselling Focus</span>
-            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#3B4E3B] tracking-tight">
-                Counselling & Relationship Guidance Services
+            <span class="badge-gold mb-3">✨ Sacred Bonds & Guidance</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#54321A] tracking-tight">
+                Family & Couple Counselling Services
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
                 Evidence-based relationship counselling tailored for couples, individuals, and families seeking emotional clarity, mutual understanding, and durable healing.
@@ -237,30 +239,24 @@
         <!-- 3-Column Services Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             @foreach($services as $service)
-                <div class="bg-white border border-stone-200 rounded-3xl p-7 shadow-sm flex flex-col justify-between card-hover-lift">
+                <div class="bg-white border border-[#E8DFD3] rounded-3xl p-7 shadow-sm flex flex-col justify-between card-hover-lift">
                     <div class="space-y-4">
                         <div class="flex items-center justify-between">
                             <span class="badge-olive">{{ $service['badge'] }}</span>
-                            <div class="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-stone-200 flex items-center justify-center text-[#3B4E3B]">
+                            <div class="w-10 h-10 rounded-2xl bg-[#FAF2DE] border border-[#DFB254]/30 flex items-center justify-center text-[#8C651A]">
                                 @if($service['icon'] === 'couple')
-                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                                    </svg>
+                                    <span class="text-lg">💍</span>
                                 @elseif($service['icon'] === 'therapy')
-                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                                    </svg>
+                                    <span class="text-lg">🤍</span>
                                 @else
-                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                    </svg>
+                                    <span class="text-lg">🌹</span>
                                 @endif
                             </div>
                         </div>
 
                         <div>
-                            <h3 class="font-serif text-xl font-bold text-stone-900 mb-1">{{ $service['title'] }}</h3>
-                            <p class="text-xs font-serif italic text-[#7A3528] mb-2">{{ $service['malayalam_title'] }}</p>
+                            <h3 class="font-serif text-xl font-bold text-[#54321A] mb-1">{{ $service['title'] }}</h3>
+                            <p class="text-xs font-serif italic text-[#8B3846] mb-2">{{ $service['malayalam_title'] }}</p>
                             <p class="text-xs text-stone-600 leading-relaxed">{{ $service['description'] }}</p>
                         </div>
 
@@ -268,7 +264,7 @@
                         <div class="pt-3 border-t border-stone-100 space-y-2">
                             @foreach($service['benefits'] as $b)
                                 <div class="flex items-center gap-2 text-xs text-stone-700">
-                                    <span class="text-[#3B4E3B] font-bold">✓</span>
+                                    <span class="text-[#C29336] font-bold">✓</span>
                                     <span>{{ $b }}</span>
                                 </div>
                             @endforeach
@@ -278,7 +274,7 @@
                     <div class="pt-6 mt-6 border-t border-stone-100">
                         <button type="button"
                                 @click="$dispatch('open-booking-modal', { service: '{{ $service['title'] }}' })"
-                                class="w-full py-2.5 bg-[#FAF8F5] hover:bg-[#3B4E3B] text-[#3B4E3B] hover:text-white border border-[#3B4E3B]/20 text-xs font-semibold rounded-xl transition shadow-sm cursor-pointer">
+                                class="w-full py-2.5 bg-[#FAF6F0] hover:bg-[#54321A] text-[#54321A] hover:text-white border border-[#54321A]/20 text-xs font-semibold rounded-xl transition shadow-xs cursor-pointer">
                             Book {{ $service['title'] }}
                         </button>
                     </div>
@@ -291,45 +287,48 @@
 
 
 <!-- 4. ABOUT THE FAMILY COUNSELOR -->
-<section id="about" class="py-16 sm:py-24 bg-[#FAF8F5] border-y border-stone-200">
+<section id="about" class="py-16 sm:py-24 bg-[#FCFAF7] border-y border-[#E8DFD3]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <!-- Left Bio Card Presentation (5 cols) -->
             <div class="lg:col-span-5">
-                <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+                <div class="bg-white border border-[#DFB254]/30 rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
                     <div class="flex items-center gap-4 mb-5">
-                        <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-[#3B4E3B]/20 shadow-sm shrink-0">
+                        <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-[#DFB254]/40 shadow-sm shrink-0">
                             <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Jefna Hameed" class="w-full h-full object-cover object-top">
                         </div>
                         <div>
-                            <h3 class="font-serif text-2xl font-bold text-[#3B4E3B]">Jefna Hameed</h3>
-                            <p class="text-xs font-semibold text-[#7A3528] uppercase tracking-wider mt-0.5">Family Counselor & Relationship Specialist</p>
+                            <h3 class="font-serif text-2xl font-bold text-[#54321A] flex items-center gap-1.5">
+                                <span>Jefna Hameed</span>
+                                <span class="text-xs text-[#C29336]">✨</span>
+                            </h3>
+                            <p class="text-xs font-semibold text-[#8B3846] uppercase tracking-wider mt-0.5">Family Counselor & Relationship Specialist</p>
                         </div>
                     </div>
                     
                     <div class="mt-4 pt-4 border-t border-stone-100 space-y-2.5 text-xs text-stone-600">
                         <div class="flex items-center gap-2">
-                            <span class="text-emerald-700">✓</span>
-                            <span>Specialized in Relationship Guidance & Family Systems</span>
+                            <span class="text-[#C29336]">✓</span>
+                            <span>Specialized in Marriage Guidance & Family Systems</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="text-emerald-700">✓</span>
+                            <span class="text-[#C29336]">✓</span>
                             <span>Certified Cognitive & Behavioral Relationship Coach</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="text-emerald-700">✓</span>
+                            <span class="text-[#C29336]">✓</span>
                             <span>Experienced in Cross-Cultural & NRI Family Dynamics</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="text-emerald-700">✓</span>
+                            <span class="text-[#C29336]">✓</span>
                             <span>Bilingual Sessions in Malayalam & English</span>
                         </div>
                     </div>
 
                     <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
                         <span class="text-xs text-stone-500">Kochi • Calicut • Worldwide Online</span>
-                        <a href="https://wa.me/918590415943" target="_blank" class="text-xs font-semibold text-[#3B4E3B] hover:underline flex items-center gap-1">
+                        <a href="https://wa.me/918590415943" target="_blank" class="text-xs font-semibold text-[#54321A] hover:underline flex items-center gap-1">
                             <span>Direct Inquiry</span> →
                         </a>
                     </div>
@@ -338,14 +337,14 @@
 
             <!-- Right Biography & Approach (7 cols) -->
             <div class="lg:col-span-7 space-y-6">
-                <span class="badge-olive">About the Family Counselor</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+                <span class="badge-gold">🕊️ About the Family Counselor</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
                     Compassionate, Confidential & Practical Guidance
                 </h2>
                 
                 <!-- Prominent Blockquote Callout -->
-                <div class="bg-[#FAF0EE] border-l-4 border-[#7A3528] p-5 rounded-r-2xl">
-                    <p class="font-serif text-lg sm:text-xl font-medium text-[#7A3528] italic">
+                <div class="bg-[#FAECF0] border-l-4 border-[#8B3846] p-5 rounded-r-2xl">
+                    <p class="font-serif text-lg sm:text-xl font-medium text-[#8B3846] italic">
                         "A healthy relationship adds value to your life, not drains you."
                     </p>
                     <p class="text-xs text-stone-600 mt-1">— Jefna Hameed, Family Counselor</p>
@@ -360,12 +359,18 @@
 
                 <!-- Core Pillars -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div class="p-4 rounded-2xl bg-white border border-stone-200/80">
-                        <h4 class="text-xs font-bold text-[#3B4E3B] uppercase tracking-wider mb-1">Empathetic Safe Container</h4>
+                    <div class="p-4 rounded-2xl bg-white border border-[#E8DFD3]">
+                        <h4 class="text-xs font-bold text-[#54321A] uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                            <span>🌹</span>
+                            <span>Empathetic Safe Container</span>
+                        </h4>
                         <p class="text-xs text-stone-600">Zero judgment. Complete freedom to express emotions at your own pace.</p>
                     </div>
-                    <div class="p-4 rounded-2xl bg-white border border-stone-200/80">
-                        <h4 class="text-xs font-bold text-[#3B4E3B] uppercase tracking-wider mb-1">Practical Frameworks</h4>
+                    <div class="p-4 rounded-2xl bg-white border border-[#E8DFD3]">
+                        <h4 class="text-xs font-bold text-[#54321A] uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                            <span>💍</span>
+                            <span>Practical Frameworks</span>
+                        </h4>
                         <p class="text-xs text-stone-600">Actionable scripts and worksheets to handle real-life conflicts smoothly.</p>
                     </div>
                 </div>
@@ -377,12 +382,12 @@
 
 
 <!-- 5. WHY CHOOSE FAMILY COUNSELLING -->
-<section id="why-therapy" class="py-16 sm:py-24 bg-[#F7F3EE]">
+<section id="why-therapy" class="py-16 sm:py-24 bg-[#FAF6F0]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="badge-terracotta mb-3">The Professional Difference</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+            <span class="badge-rose mb-3">💞 The Professional Difference</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
                 Why Professional Family Counselling Matters
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
@@ -392,7 +397,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <!-- Unstructured Casual Advice -->
-            <div class="bg-white/80 border border-stone-200 rounded-3xl p-6 sm:p-8 space-y-4">
+            <div class="bg-white/80 border border-[#E8DFD3] rounded-3xl p-6 sm:p-8 space-y-4">
                 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200">
                     ✕ Casual Advice / Unstructured Opinions
                 </div>
@@ -414,22 +419,22 @@
             </div>
 
             <!-- Structured Family Counselling -->
-            <div class="bg-[#EEF3ED]/70 border border-[#3B4E3B]/30 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
-                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#3B4E3B] text-white">
+            <div class="bg-[#FAF2DE]/80 border border-[#DFB254]/40 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#54321A] text-[#FAF6F0]">
                     ✓ Professional Family Counselling with Jefna Hameed
                 </div>
-                <h3 class="font-serif text-lg font-bold text-[#3B4E3B]">Deep, Sustainable Transformation</h3>
+                <h3 class="font-serif text-lg font-bold text-[#54321A]">Deep, Sustainable Transformation</h3>
                 <ul class="space-y-3 text-xs text-stone-700">
                     <li class="flex items-start gap-2">
-                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-[#C29336] font-bold">✓</span>
                         <span>Neutral, objective space where root communication breakdowns and triggers are resolved.</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-[#C29336] font-bold">✓</span>
                         <span>Evidence-based relationship and systemic communication frameworks tailored to your family dynamic.</span>
                     </li>
                     <li class="flex items-start gap-2">
-                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-[#C29336] font-bold">✓</span>
                         <span>Empowering you with boundaries, self-worth, and emotional clarity that lasts a lifetime.</span>
                     </li>
                 </ul>
@@ -441,12 +446,12 @@
 
 
 <!-- 6. TESTIMONIALS & CLIENT STORIES -->
-<section id="testimonials" class="py-16 sm:py-24 bg-[#FAF8F5] border-y border-stone-200">
+<section id="testimonials" class="py-16 sm:py-24 bg-[#FCFAF7] border-y border-[#E8DFD3]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="badge-olive mb-3">Client Stories</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+            <span class="badge-gold mb-3">💍 Rebuilt Bonds</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
                 Transformation & Healing Journeys
             </h2>
             <p class="text-base text-stone-700 mt-3 leading-relaxed">
@@ -456,15 +461,15 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach($testimonials as $t)
-                <div class="bg-white border border-stone-200 rounded-3xl p-6 shadow-sm flex flex-col justify-between card-hover-lift">
+                <div class="bg-white border border-[#E8DFD3] rounded-3xl p-6 shadow-sm flex flex-col justify-between card-hover-lift">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <div class="flex text-amber-400 text-sm">
+                            <div class="flex text-[#C29336] text-sm">
                                 @for($i = 0; $i < $t->rating; $i++)
                                     ★
                                 @endfor
                             </div>
-                            <span class="text-[10px] uppercase font-semibold px-2 py-0.5 rounded-full bg-[#EEF3ED] text-[#3B4E3B]">
+                            <span class="text-[10px] uppercase font-semibold px-2 py-0.5 rounded-full bg-[#FAF2DE] text-[#8C651A]">
                                 Verified
                             </span>
                         </div>
@@ -481,8 +486,8 @@
                     </div>
 
                     <div class="pt-4 mt-4 border-t border-stone-100">
-                        <h4 class="text-xs font-bold text-stone-900">{{ $t->client_name }}</h4>
-                        <p class="text-[11px] text-[#7A3528] font-medium">{{ $t->client_tag }}</p>
+                        <h4 class="text-xs font-bold text-[#54321A]">{{ $t->client_name }}</h4>
+                        <p class="text-[11px] text-[#8B3846] font-medium">{{ $t->client_tag }}</p>
                         <p class="text-[10px] text-stone-400 mt-0.5">{{ $t->location }}</p>
                     </div>
                 </div>
@@ -494,59 +499,59 @@
 
 
 <!-- 6.5 MEDIA & VIDEO HIGHLIGHTS -->
-<section id="media-preview" class="py-16 sm:py-24 bg-[#FAF8F5] border-t border-stone-200">
+<section id="media-preview" class="py-16 sm:py-24 bg-[#FAF6F0] border-t border-[#E8DFD3]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div class="max-w-2xl">
-                <span class="badge-terracotta mb-2">Media & Video Insights</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+                <span class="badge-rose mb-2">🎬 Media & Video Insights</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
                     Workshop Highlights & Guidance Talks
                 </h2>
                 <p class="text-sm text-stone-600 mt-2">
                     Glimpses into our live interactive cohorts, relationship masterclasses, and practical psychology frameworks.
                 </p>
             </div>
-            <a href="{{ route('media.index') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-stone-50 text-[#3B4E3B] border border-stone-200 font-semibold text-xs rounded-xl shadow-xs transition shrink-0">
+            <a href="{{ route('media.index') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-stone-50 text-[#54321A] border border-[#DFB254]/40 font-semibold text-xs rounded-xl shadow-xs transition shrink-0">
                 <span>View Full Media Library (Photos & Videos)</span> →
             </a>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Item 1 -->
-            <div class="group bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
                     <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Jefna Hameed Consultation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-stone-900/80 text-white">📷 Photo</span>
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">📷 Photo</span>
                 </div>
                 <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#7A3528] uppercase">Counselling Practice</span>
-                    <h4 class="font-serif text-base font-bold text-stone-900 mt-1">1-on-1 Confidential Guidance</h4>
+                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Counselling Practice</span>
+                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">1-on-1 Confidential Guidance</h4>
                     <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Creating safe spaces for emotional clarity and self-worth.</p>
                 </div>
             </div>
 
             <!-- Item 2 -->
-            <div class="group bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
                     <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Workshop Moments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#7A3528] text-white">🎬 Masterclass</span>
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#8B3846] text-white">🎬 Masterclass</span>
                 </div>
                 <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#7A3528] uppercase">Live Cohorts</span>
-                    <h4 class="font-serif text-base font-bold text-stone-900 mt-1">Avoid Toxic Relationships</h4>
+                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Live Cohorts</span>
+                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Avoid Toxic Relationships</h4>
                     <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Women empowering masterclass on boundary setting and emotional safety.</p>
                 </div>
             </div>
 
             <!-- Item 3 -->
-            <div class="group bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div class="group bg-white border border-[#E8DFD3] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between card-hover-lift">
                 <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
                     <img src="{{ asset('images/jefna-hameed.jpg') }}" alt="Couples Synergy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-stone-900/80 text-white">🎥 Video Talk</span>
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#54321A]/90 text-white">🎥 Video Talk</span>
                 </div>
                 <div class="p-5">
-                    <span class="text-[10px] font-semibold text-[#7A3528] uppercase">Marriage Guidance</span>
-                    <h4 class="font-serif text-base font-bold text-stone-900 mt-1">Couples Synergy & Harmony</h4>
+                    <span class="text-[10px] font-semibold text-[#8B3846] uppercase">Marriage Guidance</span>
+                    <h4 class="font-serif text-base font-bold text-[#54321A] mt-1">Couples Synergy & Harmony</h4>
                     <p class="text-xs text-stone-500 mt-1.5 line-clamp-2">Practical frameworks to transition from conflict to deep connection.</p>
                 </div>
             </div>
@@ -556,12 +561,12 @@
 
 
 <!-- 7. INTERACTIVE FAQ ACCORDION -->
-<section id="faq" class="py-16 sm:py-24 bg-[#F7F3EE]">
+<section id="faq" class="py-16 sm:py-24 bg-[#FCFAF7]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" x-data="{ active: null }">
         
         <div class="text-center mb-14">
-            <span class="badge-olive mb-3">Frequently Asked Questions</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+            <span class="badge-gold mb-3">✨ Frequently Asked Questions</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
                 Everything You Need to Know
             </h2>
             <p class="text-sm text-stone-600 mt-2">Clear answers about privacy, session format, and counselling outcomes.</p>
@@ -569,8 +574,8 @@
 
         <div class="space-y-4">
             <!-- FAQ 1 -->
-            <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-                <button type="button" @click="active = (active === 1 ? null : 1)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-stone-900 hover:text-[#3B4E3B] transition">
+            <div class="bg-white border border-[#E8DFD3] rounded-2xl overflow-hidden shadow-sm">
+                <button type="button" @click="active = (active === 1 ? null : 1)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-[#54321A] hover:text-[#C29336] transition">
                     <span>Is my counselling session completely confidential?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 1 ? '−' : '+'">+</span>
                 </button>
@@ -580,8 +585,8 @@
             </div>
 
             <!-- FAQ 2 -->
-            <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-                <button type="button" @click="active = (active === 2 ? null : 2)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-stone-900 hover:text-[#3B4E3B] transition">
+            <div class="bg-white border border-[#E8DFD3] rounded-2xl overflow-hidden shadow-sm">
+                <button type="button" @click="active = (active === 2 ? null : 2)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-[#54321A] hover:text-[#C29336] transition">
                     <span>Are online video/audio sessions as effective as in-person visits?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 2 ? '−' : '+'">+</span>
                 </button>
@@ -591,8 +596,8 @@
             </div>
 
             <!-- FAQ 3 -->
-            <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-                <button type="button" @click="active = (active === 3 ? null : 3)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-stone-900 hover:text-[#3B4E3B] transition">
+            <div class="bg-white border border-[#E8DFD3] rounded-2xl overflow-hidden shadow-sm">
+                <button type="button" @click="active = (active === 3 ? null : 3)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-[#54321A] hover:text-[#C29336] transition">
                     <span>What happens during the first consultation session?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 3 ? '−' : '+'">+</span>
                 </button>
@@ -602,8 +607,8 @@
             </div>
 
             <!-- FAQ 4 -->
-            <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-                <button type="button" @click="active = (active === 4 ? null : 4)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-stone-900 hover:text-[#3B4E3B] transition">
+            <div class="bg-white border border-[#E8DFD3] rounded-2xl overflow-hidden shadow-sm">
+                <button type="button" @click="active = (active === 4 ? null : 4)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-[#54321A] hover:text-[#C29336] transition">
                     <span>How does couples counselling work if my spouse is hesitant?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 4 ? '−' : '+'">+</span>
                 </button>
@@ -613,8 +618,8 @@
             </div>
 
             <!-- FAQ 5 -->
-            <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-                <button type="button" @click="active = (active === 5 ? null : 5)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-stone-900 hover:text-[#3B4E3B] transition">
+            <div class="bg-white border border-[#E8DFD3] rounded-2xl overflow-hidden shadow-sm">
+                <button type="button" @click="active = (active === 5 ? null : 5)" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-base font-bold text-[#54321A] hover:text-[#C29336] transition">
                     <span>Can I attend the "Avoid Toxic Relationships" masterclass anonymously?</span>
                     <span class="text-stone-400 font-sans text-xl" x-text="active === 5 ? '−' : '+'">+</span>
                 </button>
@@ -629,15 +634,15 @@
 
 
 <!-- 8. INTERACTIVE LEAD CAPTURE & CONTACT SECTION -->
-<section id="contact" class="py-16 sm:py-24 bg-[#FAF8F5] border-t border-stone-200">
+<section id="contact" class="py-16 sm:py-24 bg-[#FAF6F0] border-t border-[#E8DFD3]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             <!-- Left Contact Info (5 cols) -->
             <div class="lg:col-span-5 space-y-6">
-                <span class="badge-olive">Get in Touch</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#3B4E3B] tracking-tight">
+                <span class="badge-gold">🕊️ Get in Touch</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#54321A] tracking-tight">
                     Begin Your Path to Peace & Clarity
                 </h2>
                 <p class="text-sm text-stone-700 leading-relaxed">
@@ -645,12 +650,12 @@
                 </p>
 
                 <div class="space-y-4 pt-2">
-                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200">
-                        <div class="p-2.5 rounded-xl bg-[#EEF3ED] text-[#3B4E3B] shrink-0">
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#DFB254]/30 shadow-xs">
+                        <div class="p-2.5 rounded-xl bg-[#FAF2DE] text-[#8C651A] shrink-0">
                             💬
                         </div>
                         <div>
-                            <h4 class="text-xs font-bold text-stone-900">Direct WhatsApp Inquiry</h4>
+                            <h4 class="text-xs font-bold text-[#54321A]">Direct WhatsApp Inquiry</h4>
                             <p class="text-xs text-stone-600 mt-0.5">Instant booking assistance with our coordinator.</p>
                             <a href="https://wa.me/918590415943?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20counselling%20session."
                                target="_blank" rel="noopener noreferrer"
@@ -660,12 +665,12 @@
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200">
-                        <div class="p-2.5 rounded-xl bg-[#FAF0EE] text-[#7A3528] shrink-0">
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#E8DFD3]">
+                        <div class="p-2.5 rounded-xl bg-[#FAECF0] text-[#8B3846] shrink-0">
                             📍
                         </div>
                         <div>
-                            <h4 class="text-xs font-bold text-stone-900">Locations & Modes</h4>
+                            <h4 class="text-xs font-bold text-[#54321A]">Locations & Modes</h4>
                             <p class="text-xs text-stone-600 mt-0.5">
                                 • Online Video Consultations (Pan-India & Overseas)<br>
                                 • In-Person Counselling Practice (Kochi & Calicut, Kerala)
@@ -673,12 +678,12 @@
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200">
-                        <div class="p-2.5 rounded-xl bg-stone-100 text-stone-800 shrink-0">
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#E8DFD3]">
+                        <div class="p-2.5 rounded-xl bg-[#F5EEE6] text-[#54321A] shrink-0">
                             ✉️
                         </div>
                         <div>
-                            <h4 class="text-xs font-bold text-stone-900">Email Inquiries</h4>
+                            <h4 class="text-xs font-bold text-[#54321A]">Email Inquiries</h4>
                             <p class="text-xs text-stone-600 mt-0.5">care@jefnahameed.com</p>
                         </div>
                     </div>

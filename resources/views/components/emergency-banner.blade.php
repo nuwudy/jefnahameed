@@ -1,4 +1,4 @@
-<div class="bg-[#2A382A] text-stone-200 text-xs py-2 px-4 border-b border-stone-800">
+<div class="bg-[#3B2110] text-[#FAF6F0] text-xs py-2 px-4 border-b border-[#54321A]">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
             <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>

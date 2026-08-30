@@ -1,12 +1,10 @@
-<div class="bg-[#FAF8F5] border border-stone-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+<div class="bg-[#FCFAF7] border border-[#DFB254]/40 rounded-3xl p-6 sm:p-8 shadow-md">
     @if($isEnrolled)
         <div class="text-center py-6">
-            <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3">
-                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
+            <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
+                🌹
             </div>
-            <h4 class="font-serif text-2xl font-semibold text-[#3B4E3B] mb-2">Registration Reserved!</h4>
+            <h4 class="font-serif text-2xl font-semibold text-[#54321A] mb-2">Registration Reserved!</h4>
             <p class="text-stone-600 text-sm mb-4">
                 Thank you <strong class="text-stone-800">{{ $name }}</strong>. Your seat for <strong class="text-stone-800">{{ $selectedBatch }}</strong> is provisionally reserved.
             </p>
@@ -31,13 +29,13 @@
     @else
         <div class="mb-5">
             <div class="flex items-center justify-between gap-2 mb-2">
-                <span class="badge-terracotta">⚡ Limited Batch Seats</span>
+                <span class="badge-rose">⚡ Limited Batch Seats</span>
                 <div class="text-right">
                     <span class="text-xs text-stone-400 line-through">₹{{ number_format($workshop->original_fee ?? 1999, 0) }}</span>
-                    <span class="text-xl font-bold text-[#3B4E3B] ml-1">₹{{ number_format($workshop->fee, 0) }}</span>
+                    <span class="text-xl font-bold text-[#54321A] ml-1">₹{{ number_format($workshop->fee, 0) }}</span>
                 </div>
             </div>
-            <h4 class="font-serif text-xl font-semibold text-[#3B4E3B]">Reserve Your Seat</h4>
+            <h4 class="font-serif text-xl font-semibold text-[#54321A]">Reserve Your Seat</h4>
             <p class="text-xs text-stone-600 mt-0.5">Secure, confidential online batch with live Q&A.</p>
         </div>
 
@@ -48,8 +46,8 @@
                 <div class="space-y-2">
                     @if(!empty($workshop->upcoming_batches))
                         @foreach($workshop->upcoming_batches as $batch)
-                            <label class="flex items-center p-2.5 rounded-xl border text-xs cursor-pointer transition {{ $selectedBatch === $batch ? 'border-[#3B4E3B] bg-[#EEF3ED]/60 font-medium text-[#3B4E3B]' : 'border-stone-200 bg-white text-stone-700 hover:border-stone-300' }}">
-                                <input type="radio" wire:model="selectedBatch" value="{{ $batch }}" class="text-[#3B4E3B] focus:ring-[#3B4E3B] mr-2">
+                            <label class="flex items-center p-2.5 rounded-xl border text-xs cursor-pointer transition {{ $selectedBatch === $batch ? 'border-[#C29336] bg-[#FAF2DE]/70 font-medium text-[#8C651A]' : 'border-stone-200 bg-white text-stone-700 hover:border-stone-300' }}">
+                                <input type="radio" wire:model="selectedBatch" value="{{ $batch }}" class="text-[#C29336] focus:ring-[#C29336] mr-2">
                                 <span>{{ $batch }}</span>
                             </label>
                         @endforeach
@@ -61,25 +59,25 @@
             <!-- Name -->
             <div>
                 <label class="block text-xs font-semibold text-stone-700 mb-1">Full Name *</label>
-                <input type="text" wire:model="name" placeholder="Your name" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]">
+                <input type="text" wire:model="name" placeholder="Your name" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-[#C29336]">
                 @error('name') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
             </div>
 
             <!-- Phone -->
             <div>
                 <label class="block text-xs font-semibold text-stone-700 mb-1">WhatsApp Number *</label>
-                <input type="tel" wire:model="phone" placeholder="+91 98765 43210" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]">
+                <input type="tel" wire:model="phone" placeholder="+91 98765 43210" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-[#C29336]">
                 @error('phone') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
             </div>
 
             <!-- Email -->
             <div>
                 <label class="block text-xs font-semibold text-stone-700 mb-1">Email (For Zoom & Worksheets)</label>
-                <input type="email" wire:model="email" placeholder="you@example.com" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]">
+                <input type="email" wire:model="email" placeholder="you@example.com" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-[#C29336]">
                 @error('email') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
             </div>
 
-            <button type="submit" wire:loading.attr="disabled" class="w-full mt-2 py-3 bg-[#7A3528] hover:bg-[#60281E] text-white font-medium text-sm rounded-xl transition shadow-md flex items-center justify-center gap-2">
+            <button type="submit" wire:loading.attr="disabled" class="w-full mt-2 py-3 bg-[#54321A] hover:bg-[#3B2110] text-[#FAF6F0] font-medium text-sm rounded-xl transition shadow-md flex items-center justify-center gap-2 border border-[#DFB254]/40">
                 <span wire:loading.remove>Reserve Seat for ₹{{ number_format($workshop->fee, 0) }}</span>
                 <span wire:loading>Processing registration...</span>
             </button>

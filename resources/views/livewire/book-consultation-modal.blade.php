@@ -5,7 +5,7 @@
             <div class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm transition-opacity" wire:click="closeModal"></div>
 
             <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
-                <div class="relative transform overflow-hidden rounded-3xl bg-[#FAF8F5] border border-stone-200 text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-xl p-6 sm:p-8">
+                <div class="relative transform overflow-hidden rounded-3xl bg-[#FCFAF7] border border-[#DFB254]/40 text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-xl p-6 sm:p-8">
                     <!-- Close button -->
                     <button type="button" wire:click="closeModal" class="absolute top-5 right-5 text-stone-400 hover:text-stone-700 transition p-2 rounded-full hover:bg-stone-200/50">
                         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -15,12 +15,10 @@
 
                     @if($isSuccess)
                         <div class="text-center py-6">
-                            <div class="w-16 h-16 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
+                            <div class="w-16 h-16 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                                💍
                             </div>
-                            <h3 class="font-serif text-2xl font-semibold text-[#3B4E3B] mb-2">Consultation Request Received</h3>
+                            <h3 class="font-serif text-2xl font-semibold text-[#54321A] mb-2">Consultation Request Received</h3>
                             <p class="text-stone-600 text-sm mb-6 leading-relaxed">
                                 Thank you, <span class="font-semibold text-stone-800">{{ $name }}</span>. We have securely saved your booking details. We will reach out shortly to confirm your confidential session.
                             </p>
@@ -38,24 +36,24 @@
                                 </div>
                             @endif
 
-                            <button type="button" wire:click="closeModal" class="px-6 py-2.5 bg-[#3B4E3B] text-white rounded-xl text-sm font-medium hover:bg-[#2A382A] transition">
+                            <button type="button" wire:click="closeModal" class="px-6 py-2.5 bg-[#54321A] text-white rounded-xl text-sm font-medium hover:bg-[#3B2110] transition">
                                 Done
                             </button>
                         </div>
                     @else
                         <div class="mb-6">
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-[#FAF0EE] text-[#7A3528] border border-[#7A3528]/20 mb-2">
-                                🔒 100% Confidential & Safe
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-[#FAF2DE] text-[#8C651A] border border-[#DFB254]/30 mb-2">
+                                🔒 100% Confidential & Safe Guidance
                             </span>
-                            <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-[#3B4E3B]">Book a Confidential Session</h3>
-                            <p class="text-stone-600 text-sm mt-1">Take the first step towards emotional healing and relationship clarity.</p>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-[#54321A]">Book a Confidential Session</h3>
+                            <p class="text-stone-600 text-sm mt-1">Take the first step towards emotional healing and marriage clarity.</p>
                         </div>
 
                         <form wire:submit="submit" class="space-y-4">
                             <!-- Full Name -->
                             <div>
                                 <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Your Name *</label>
-                                <input type="text" wire:model="name" placeholder="e.g. Sarah Joseph" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B] focus:border-transparent">
+                                <input type="text" wire:model="name" placeholder="e.g. Sarah Joseph" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336] focus:border-transparent">
                                 @error('name') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                             </div>
 
@@ -63,12 +61,12 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 <div>
                                     <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Phone / WhatsApp *</label>
-                                    <input type="tel" wire:model="phone" placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B] focus:border-transparent">
+                                    <input type="tel" wire:model="phone" placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336] focus:border-transparent">
                                     @error('phone') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                                 </div>
                                 <div>
                                     <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Email Address</label>
-                                    <input type="email" wire:model="email" placeholder="sarah@example.com" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B] focus:border-transparent">
+                                    <input type="email" wire:model="email" placeholder="sarah@example.com" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336] focus:border-transparent">
                                     @error('email') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                                 </div>
                             </div>
@@ -76,8 +74,8 @@
                             <!-- Service Type -->
                             <div>
                                 <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Counselling Service *</label>
-                                <select wire:model="service_type" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]">
-                                    <option value="1-on-1 Clinical Therapy">1-on-1 Clinical Therapy Session</option>
+                                <select wire:model="service_type" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336]">
+                                    <option value="1-on-1 Clinical Therapy">1-on-1 Personal Guidance Session</option>
                                     <option value="Family & Couple Counselling">Family & Couple Counselling (ഭാര്യയും ഭർത്താവും)</option>
                                     <option value="Women's Growth & Boundary Coaching">Women's Personal Growth & Boundary Coaching</option>
                                     <option value="Toxic Relationship Healing">Toxic Relationship Healing Consultation</option>
@@ -90,7 +88,7 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 <div>
                                     <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Preferred Time Slot *</label>
-                                    <select wire:model="preferred_slot" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]">
+                                    <select wire:model="preferred_slot" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336]">
                                         <option value="Morning (10:00 AM - 1:00 PM)">Morning (10 AM - 1 PM)</option>
                                         <option value="Afternoon (2:00 PM - 5:00 PM)">Afternoon (2 PM - 5 PM)</option>
                                         <option value="Evening (5:30 PM - 8:30 PM)">Evening (5:30 PM - 8:30 PM)</option>
@@ -99,7 +97,7 @@
                                 </div>
                                 <div>
                                     <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Session Mode *</label>
-                                    <select wire:model="session_mode" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]">
+                                    <select wire:model="session_mode" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336]">
                                         <option value="Online (Confidential Video/Audio)">Online (Google Meet/Zoom)</option>
                                         <option value="In-Person Clinic Session">In-Person Consultation</option>
                                     </select>
@@ -109,7 +107,7 @@
                             <!-- Optional Message / Concern -->
                             <div>
                                 <label class="block text-xs font-medium text-stone-700 uppercase tracking-wider mb-1">Brief Note (Optional & Confidential)</label>
-                                <textarea wire:model="message" rows="2" placeholder="Briefly share what you would like to focus on..." class="w-full px-4 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#3B4E3B]"></textarea>
+                                <textarea wire:model="message" rows="2" placeholder="Briefly share what you would like to focus on..." class="w-full px-4 py-2 rounded-xl border border-stone-300 bg-white text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#C29336]"></textarea>
                                 @error('message') <span class="text-red-600 text-xs mt-1 block">{{ $message }}</span> @enderror
                             </div>
 
@@ -118,7 +116,7 @@
                                 <button type="button" wire:click="closeModal" class="px-5 py-2.5 rounded-xl text-stone-600 hover:text-stone-900 text-sm font-medium transition">
                                     Cancel
                                 </button>
-                                <button type="submit" wire:loading.attr="disabled" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#3B4E3B] hover:bg-[#2A382A] text-white font-medium text-sm rounded-xl transition shadow-md disabled:opacity-50">
+                                <button type="submit" wire:loading.attr="disabled" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#54321A] hover:bg-[#3B2110] text-[#FAF6F0] font-medium text-sm rounded-xl transition shadow-md disabled:opacity-50 border border-[#DFB254]/40">
                                     <span wire:loading.remove>Confirm Consultation</span>
                                     <span wire:loading>Processing...</span>
                                 </button>
