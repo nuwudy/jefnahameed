@@ -22,7 +22,7 @@ test('landing page loads successfully with essential branding and sections', fun
     $response->assertSee('Jefna Hameed');
     $response->assertSee('From Divorce Talks to Honeymoon Days');
     $response->assertSee('Reclaim Your Marriage');
-    $response->assertSee('Clinical Psychology & Marriage Guidance', false);
+    $response->assertSee('Relationship Transformation by Jefna Hameed');
     $response->assertSee('Avoid Toxic Relationships');
     $response->assertSee('Family Counselor');
     $response->assertSee('Family &amp; Couple Counselling', false);

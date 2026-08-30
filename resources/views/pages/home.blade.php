@@ -19,7 +19,7 @@
                 <!-- Badge Pill -->
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EEF3ED] border border-[#3B4E3B]/20 text-[#3B4E3B] text-xs font-semibold tracking-wider uppercase">
                     <span class="w-2 h-2 rounded-full bg-[#3B4E3B]"></span>
-                    Clinical Psychology & Marriage Guidance
+                    Relationship Transformation by Jefna Hameed
                 </div>
 
                 <!-- Primary Headline -->
