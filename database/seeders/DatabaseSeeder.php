@@ -4,8 +4,10 @@ namespace Database\Seeders;
 
 use App\Models\MediaItem;
 use App\Models\Testimonial;
+use App\Models\User;
 use App\Models\Workshop;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +16,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // 0. Default Admin User
+        User::updateOrCreate(
+            ['email' => 'admin@jefnahameed.com'],
+            [
+                'name' => 'Jefna Hameed',
+                'password' => Hash::make('Jefna@2026!'),
+            ]
+        );
+
         // 1. Featured Masterclass: "Avoid Toxic Relationships"
         Workshop::updateOrCreate(
             ['slug' => 'avoid-toxic-relationships'],

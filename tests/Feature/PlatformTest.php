@@ -115,3 +115,25 @@ test('media library manager allows adding and deleting media', function () {
     expect(\App\Models\MediaItem::find($item->id))->toBeNull();
 });
 
+test('admin login page loads successfully', function () {
+    $response = $this->get('/admin/login');
+    $response->assertStatus(200);
+    $response->assertSee('Admin Portal Login');
+});
+
+test('admin login authenticates and redirects to dashboard', function () {
+    \Livewire\Livewire::test(\App\Livewire\AdminLogin::class)
+        ->set('email', 'admin@jefnahameed.com')
+        ->set('password', 'Jefna@2026!')
+        ->call('login')
+        ->assertRedirect(route('admin.dashboard'));
+
+    $this->assertAuthenticated();
+});
+
+test('unauthenticated users cannot access admin dashboard', function () {
+    $response = $this->get('/admin');
+    $response->assertRedirect('/login');
+});
+
+
