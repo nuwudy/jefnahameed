@@ -20,9 +20,9 @@ test('landing page loads successfully with essential branding and sections', fun
 
     $response->assertStatus(200);
     $response->assertSee('Jefna Hameed');
-    $response->assertSee('From Toxic Relationships to a');
-    $response->assertSee('Loving Family Life');
-    $response->assertSee('Clinical Psychology & Relationship Guidance', false);
+    $response->assertSee('From Divorce Talks to Honeymoon Days');
+    $response->assertSee('Reclaim Your Marriage');
+    $response->assertSee('Clinical Psychology & Marriage Guidance', false);
     $response->assertSee('Avoid Toxic Relationships');
     $response->assertSee('Family Counselor');
     $response->assertSee('Family &amp; Couple Counselling', false);
