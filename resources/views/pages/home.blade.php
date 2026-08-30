@@ -325,7 +325,7 @@
 
                     <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
                         <span class="text-xs text-stone-500">Kochi • Calicut • Worldwide Online</span>
-                        <a href="https://wa.me/919400000000" target="_blank" class="text-xs font-semibold text-[#3B4E3B] hover:underline flex items-center gap-1">
+                        <a href="https://wa.me/918590415943" target="_blank" class="text-xs font-semibold text-[#3B4E3B] hover:underline flex items-center gap-1">
                             <span>Direct Inquiry</span> →
                         </a>
                     </div>
@@ -586,10 +586,10 @@
                         <div>
                             <h4 class="text-xs font-bold text-stone-900">Direct WhatsApp Inquiry</h4>
                             <p class="text-xs text-stone-600 mt-0.5">Instant booking assistance with our coordinator.</p>
-                            <a href="https://wa.me/919400000000?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20counselling%20session."
+                            <a href="https://wa.me/918590415943?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20counselling%20session."
                                target="_blank" rel="noopener noreferrer"
                                class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:underline mt-1">
-                                Chat on WhatsApp (+91 94000 00000) →
+                                Chat on WhatsApp (+91 85904 15943) →
                             </a>
                         </div>
                     </div>

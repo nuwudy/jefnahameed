@@ -82,7 +82,7 @@
                     </li>
                     <li class="flex items-center gap-2">
                         <span>💬</span>
-                        <a href="https://wa.me/919400000000" target="_blank" class="hover:text-white transition">WhatsApp: +91 94000 00000</a>
+                        <a href="https://wa.me/918590415943" target="_blank" class="hover:text-white transition">WhatsApp: +91 85904 15943</a>
                     </li>
                     <li class="flex items-center gap-2">
                         <span>✉️</span>

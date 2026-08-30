@@ -2,7 +2,7 @@
     <div class="hidden sm:block mr-3 bg-white text-stone-800 text-xs font-semibold px-3.5 py-2 rounded-2xl shadow-lg border border-stone-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
         Chat with Clinical Team 💬
     </div>
-    <a href="https://wa.me/919400000000?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20therapy%20session%20or%20workshop."
+    <a href="https://wa.me/918590415943?text=Hello%20Jefna%20Hameed,%20I%20would%20like%20to%20inquire%20about%20a%20therapy%20session%20or%20workshop."
        target="_blank"
        rel="noopener noreferrer"
        class="w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 relative"

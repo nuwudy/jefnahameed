@@ -42,7 +42,7 @@
           'name' => 'Jefna Hameed — Family Counselor & Relationship Guidance',
           'description' => 'Family counselor specializing in relationship dynamics, couples therapy, toxic relationship recovery, and women\'s boundary coaching.',
           'url' => url('/'),
-          'telephone' => '+919400000000',
+          'telephone' => '+918590415943',
           'priceRange' => '$$',
           'areaServed' => ['Kerala', 'India', 'United Arab Emirates', 'Worldwide (Online)'],
           'availableService' => [

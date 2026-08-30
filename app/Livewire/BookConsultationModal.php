@@ -70,7 +70,7 @@ class BookConsultationModal extends Component
             "%0A*Mode:* " . urlencode($validated['session_mode']) .
             ($validated['message'] ? ("%0A*Note:* " . urlencode($validated['message'])) : "");
 
-        $this->whatsappUrl = "https://wa.me/919400000000?text=" . $waText;
+        $this->whatsappUrl = "https://wa.me/918590415943?text=" . $waText;
         $this->isSuccess = true;
     }
 

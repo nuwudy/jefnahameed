@@ -60,7 +60,7 @@ class WorkshopEnrollment extends Component
             "%0A*Fee:* ₹" . number_format($this->workshop->fee, 0) .
             "%0A%0APlease share the registration link & payment details.";
 
-        $this->whatsappUrl = "https://wa.me/919400000000?text=" . $waText;
+        $this->whatsappUrl = "https://wa.me/918590415943?text=" . $waText;
         $this->isEnrolled = true;
     }
 
