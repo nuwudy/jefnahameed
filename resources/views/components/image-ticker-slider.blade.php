@@ -45,6 +45,27 @@
             @php
                 $slides = [
                     [
+                        'img' => asset('images/gallery/houseboat-honeymoon-backwaters.webp'),
+                        'badge' => '⛵ Backwater Honeymoon',
+                        'badge_color' => 'bg-[#FAF2DE] text-[#8C651A] border-[#DFB254]/40',
+                        'title' => 'Backwater Houseboat Honeymoon in Kerala',
+                        'caption' => 'Rediscovering joy, shared laughter, and peaceful intimacy floating along the serene backwaters.',
+                    ],
+                    [
+                        'img' => asset('images/gallery/munnar-hillside-resort-honeymoon.webp'),
+                        'badge' => '⛰️ Munnar Luxury Resort',
+                        'badge_color' => 'bg-[#FAECF0] text-[#8B3846] border-[#8B3846]/30',
+                        'title' => 'Hillside Honeymoon Suite in Munnar',
+                        'caption' => 'Reconnecting with romance, tea-garden views, and celebration of a revived marital bond.',
+                    ],
+                    [
+                        'img' => asset('images/gallery/kerala-muslim-family-home.webp'),
+                        'badge' => '🕌 Loving Family Sanctuary',
+                        'badge_color' => 'bg-emerald-50 text-emerald-800 border-emerald-200',
+                        'title' => 'Peaceful Storytime & Family Harmony',
+                        'caption' => 'A joyful, warm home evening with parents and children sharing stories in comfort and gratitude.',
+                    ],
+                    [
                         'img' => asset('images/gallery/family-court-reconciliation.webp'),
                         'badge' => '💍 Reclaimed Marriage',
                         'badge_color' => 'bg-[#FAF2DE] text-[#8C651A] border-[#DFB254]/40',
@@ -53,17 +74,17 @@
                     ],
                     [
                         'img' => asset('images/gallery/sunset-cliff-honeymoon.webp'),
-                        'badge' => '🌅 Honeymoon Moments',
+                        'badge' => '🌅 Sunset Cliff Moments',
                         'badge_color' => 'bg-[#FAECF0] text-[#8B3846] border-[#8B3846]/30',
                         'title' => 'Sunset Intimacy by the Ocean',
-                        'caption' => 'Restoring emotional transparency and honeymoon warmth overlooking the sea.',
+                        'caption' => 'Restoring emotional transparency and honeymoon warmth overlooking the sea in Varkala.',
                     ],
                     [
                         'img' => asset('images/gallery/luxury-resort-connection.webp'),
                         'badge' => '☕ Quality Reconnection',
                         'badge_color' => 'bg-[#FAF2DE] text-[#8C651A] border-[#DFB254]/40',
                         'title' => 'Resort Sanctuary & Shared Joy',
-                        'caption' => 'Learning to hold hands and communicate without fear or resentment.',
+                        'caption' => 'Learning to hold hands and communicate without fear, guilt, or resentment.',
                     ],
                     [
                         'img' => asset('images/gallery/kovalam-beach-celebration.webp'),

@@ -101,6 +101,39 @@ class DatabaseSeeder extends Seeder
         // 3. Media Items (Transformation Photos, Masterclass Moments & Video Talks)
         $mediaItems = [
             [
+                'title' => 'Backwater Houseboat Honeymoon in Kerala',
+                'slug' => 'backwater-houseboat-honeymoon-kerala',
+                'type' => 'image',
+                'category' => 'Moments & Talks',
+                'file_path' => '/images/gallery/houseboat-honeymoon-backwaters.webp',
+                'caption' => 'Rediscovering joy, shared laughter, and peaceful intimacy floating along the serene backwaters.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 1,
+            ],
+            [
+                'title' => 'Hillside Honeymoon Suite in Munnar',
+                'slug' => 'hillside-honeymoon-suite-munnar',
+                'type' => 'image',
+                'category' => 'Marriage Guidance',
+                'file_path' => '/images/gallery/munnar-hillside-resort-honeymoon.webp',
+                'caption' => 'Reconnecting with romance, tea-garden views, and celebration of a revived marital bond.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 2,
+            ],
+            [
+                'title' => 'Peaceful Storytime & Family Harmony',
+                'slug' => 'peaceful-storytime-family-harmony',
+                'type' => 'image',
+                'category' => 'Counselling & Therapy',
+                'file_path' => '/images/gallery/kerala-muslim-family-home.webp',
+                'caption' => 'A joyful, warm home evening with parents and children sharing stories in comfort and gratitude.',
+                'is_featured' => true,
+                'is_public' => true,
+                'sort_order' => 3,
+            ],
+            [
                 'title' => 'From Family Court to Restored Marriage',
                 'slug' => 'from-family-court-to-restored-marriage',
                 'type' => 'image',
@@ -109,7 +142,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'A courageous couple walking hand-in-hand out of Kerala Family Court, having overcome divorce talks and restored their lifelong marital bond.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 1,
+                'sort_order' => 4,
             ],
             [
                 'title' => 'Sunset Cliff Honeymoon Moment in Varkala',
@@ -120,7 +153,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'Experiencing peaceful intimacy, mutual laughter, and honeymoon days once again overlooking the golden sunset coast.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 2,
+                'sort_order' => 5,
             ],
             [
                 'title' => 'Reconnected in Warm Luxury Resort Sanctuary',
@@ -131,7 +164,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'Smiling, holding hands, and enjoying deep, uninterrupted quality conversation in a calm, comforting atmosphere.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 3,
+                'sort_order' => 6,
             ],
             [
                 'title' => 'Joyful Beach Celebration with Family',
@@ -142,7 +175,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'Celebrating restored marital harmony, love, and family blessing along the serene Kerala coastline.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 4,
+                'sort_order' => 7,
             ],
             [
                 'title' => 'Peaceful and Loving Family Home Life',
@@ -153,7 +186,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'A secure, harmonious family evening at home where parents and children bond in warmth, safety, and mutual joy.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 5,
+                'sort_order' => 8,
             ],
             [
                 'title' => 'Couples Synergy & Communication Frameworks',
@@ -166,7 +199,7 @@ class DatabaseSeeder extends Seeder
                 'caption' => 'Key insights on navigating expectations, daily emotional transparency, and constructive disagreement for married couples.',
                 'is_featured' => true,
                 'is_public' => true,
-                'sort_order' => 6,
+                'sort_order' => 9,
             ],
         ];
 
