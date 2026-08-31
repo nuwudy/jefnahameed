@@ -2,6 +2,7 @@
         currentSlide: 0,
         slides: [
             '{{ asset('images/hero-slider/jefna-portrait.webp') }}',
+            '{{ asset('images/hero-slider/husband-wife-interaction-class.webp') }}',
             '{{ asset('images/hero-slider/husband-wife-bonding.webp') }}',
             '{{ asset('images/hero-slider/sharing-emotions-class.webp') }}',
             '{{ asset('images/hero-slider/malayalam-bonding-class.webp') }}'
